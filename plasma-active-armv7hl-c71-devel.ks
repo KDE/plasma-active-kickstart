@@ -52,6 +52,8 @@ dbus-x11
 gzip
 #mesa-dri-swrast-driver
 mesa-llvmpipe-dri-swrast-driver 
+libqtmultimediakit1
+libdeclarative-multimedia
 qt-qmlviewer
 xorg-x11-drv-evdev
 xorg-x11-drv-fbdev
@@ -166,7 +168,7 @@ alsa-plugins-pulseaudio
 xorg-x11-drv-evdev
 xorg-x11-drv-mtev
 dbus-x11
-libqtdeclarative4-gestures
+#libqtdeclarative4-gestures
 
 # New stuff to get closer to the x86 mer image
 bluetooth-qt

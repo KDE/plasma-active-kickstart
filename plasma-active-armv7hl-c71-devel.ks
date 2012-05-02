@@ -53,14 +53,13 @@ gzip
 #mesa-dri-swrast-driver
 mesa-llvmpipe-dri-swrast-driver 
 qt-qmlviewer
-vim-enhanced
 xorg-x11-drv-evdev
 xorg-x11-drv-fbdev
 mailcap
 usbutils
 libqtwebkit-qmlwebkitplugin
 tar
--zypper
+zypper
 
 # Needed till pvr acceleration works
 mesa-llvmpipe-libEGL
@@ -118,6 +117,7 @@ kdialog
 # add some simple testing tools
 simple-tests
 sample-media
+kde-artwork-active-800-480
 
 # NetworkManager stuff
 ConsoleKit
@@ -191,6 +191,7 @@ upower
 xterm
 less
 strace
+plasma-contour-config-blacklist
 
 #kde-runtime-debuginfo
 #kde-workspace-debuginfo

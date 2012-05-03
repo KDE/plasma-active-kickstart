@@ -1,0 +1,5 @@
+
+if [ -n "$IMG_NAME" ]; then
+    echo "BUILD: $IMG_NAME" >> $INSTALL_ROOT/etc/meego-release
+fi
+

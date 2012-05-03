@@ -1,0 +1,3 @@
+# This partition is made so that u-boot can find the kernel
+part /boot --size=64 --ondisk cardblksd --fstype=vfat
+part / --size=2000  --ondisk cardblksd --fstype=ext3

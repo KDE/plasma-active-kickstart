@@ -1,0 +1,3 @@
+ 
+# Remove cursor from showing during startup BMC#14991
+echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch

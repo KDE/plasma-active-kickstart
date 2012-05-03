@@ -1,0 +1,12 @@
+ 
+cat > /usr/share/xsessions/X-MEEGO-HS.plasmaactive << EOF
+[Desktop Entry]
+Version=1.0
+Name=plasma active session
+Exec=/usr/bin/startactive
+Type=Application
+EOF
+
+# Set symlink pointing to .desktop file 
+
+ln -sf X-MEEGO-HS.plasmaactive /usr/share/xsessions/default.desktop

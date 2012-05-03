@@ -1,0 +1,11 @@
+ExternalConfigs:
+     - vivaldi
+
+Configurations:
+        - Name: plasma-active-armv7hl-vivaldi-devel
+          Active: True
+          Inherit:    
+            - ARMv7 hardfp architecture
+            - Plasma Active
+          FileName: plasma-active-armv7hl-vivaldi-devel
+

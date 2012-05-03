@@ -1,0 +1,242 @@
+
+ARMv7 softfp architecture:
+        Architecture: armv7l
+
+ARMv7 hardfp architecture:
+        Architecture: armv7hl
+
+SSSE3 enabled X86 architecture:
+        Architecture: i586 
+
+Generic X86 architecture:
+        Architecture: i486
+
+
+Repositories: 
+- Name: mer-core
+  Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/packages
+- Name: mer-core-debug
+  Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/debug
+- Name: mer-extras
+  Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Mer_Extras_@ARCH@
+- Name: mer-shared
+  Url: http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@
+- Name: ce_tools
+  Url: http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@
+- Name: mer-plasma-shared
+  Url: http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_@ARCH@
+- Name: plasma
+  Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
+
+Plasma Active:
+        Language: en_US.UTF-8
+        Keyboard: us
+        Timezone: UTC
+
+        RepositoryOptions: --save --debuginfo --source
+        Repos:
+        - mer-core
+        - mer-core-debug
+        - mer-extras
+        - mer-shared
+        - ce_tools
+        - mer-plasma-shared
+        - plasma
+
+        Part: vivaldi/partitions
+
+        # user setup
+        RootPass: mer
+        DefaultUser: mer
+        DefaultUserPass: mer
+
+
+
+        Groups:
+        - Mer Core
+        - Mer Core Utils
+        - Mer Graphics Common
+        - Mer Connectivity
+        - Mer Minimal Xorg
+        - Nemo Middleware Shared
+
+        ExtraPackages:
+        #- maliit-framework
+        #- maliit-plugins
+        #- ohm
+        - ohm-plugins-misc
+        - openssh-clients
+        - openssh-server
+        - xterm
+        - vim-enhanced
+
+        # Additional packages from mercore repository
+        - cpio
+        - gzip
+        - connman-test
+        - dbus
+        - dbus-x11
+        - gzip
+        #mesa-dri-swrast-driver
+        - mesa-llvmpipe-dri-swrast-driver 
+        - libqtmultimediakit1
+        - libdeclarative-multimedia
+        - qt-qmlviewer
+        - xorg-x11-drv-evdev
+        - xorg-x11-drv-fbdev
+        - mailcap
+        - usbutils
+        - libqtwebkit-qmlwebkitplugin
+        - tar
+        - zypper
+
+        # Needed till pvr acceleration works
+        - mesa-llvmpipe-libEGL
+
+        # mer-shared repository
+        #######################
+
+        # Additional packages from mer-shared repository
+        - gst-plugins-good
+        #- ca-certificates
+        - pulseaudio-policy-enforcement
+
+        # mer-plasma-shared repository
+        ##############################
+        - iodbc
+        # Hopefully not needed
+        #- iodbc-admin
+
+        - gdb
+        - gdb-gdbserver
+
+        # plasma repository
+        ###################
+        - bodega-client
+        - contour
+        - contour-intro
+        - declarative-plasmoids
+        - kdelibs-data
+        - kdelibs-imageio-plugins
+        - kdelibs-plasma-runtime
+        - kdepim-strigi-plugins
+        - kde-runtime-desktoptheme
+        - kde-runtime-emoticons
+        - kde-runtime-nepomuk
+        - kde-runtime-netattach
+        - kde-runtime-newstuff
+        - kde-runtime-plasma
+        - kde-runtime-solid
+        - kde-runtime-sounds
+        - kde-runtime-wallet
+        - kmix
+        - plasma-active
+        - plasma-mobile-mouse
+        - startactive
+        - virtuoso
+        - virtuoso-drivers
+        - virtuoso-server
+        # required by installdbgsymbols.sh
+        - kdialog
+        # add some simple testing tools
+        - simple-tests
+        - sample-media
+        - kde-artwork-active-800-480
+
+        # NetworkManager stuff
+        - ConsoleKit
+        - ConsoleKit-libs
+        - ConsoleKit-x11
+        - dhclient
+        - libpcap
+        - ModemManager
+        #- ModemManager-debuginfo
+        - NetworkManager
+        - NetworkManager-glib
+        - NetworkManager-kde
+        - NetworkManager-kde-libs
+        - plasmoid-networkmanagement
+        - ppp
+        #- strongswan
+        #- NetworkManager-kde-novellvpn
+        #- NetworkManager-kde-openvpn
+        #- NetworkManager-kde-strongswan
+
+        # Games
+        - lskat
+        - katomic
+        - kfourinline
+        - knetwalk
+        - kshisen
+        - kmahjongg
+        - kpat
+        - kreversi
+
+        # Apps
+        - bangarang
+        - kwrite
+        - ksnapshot
+        #- nepomukshell
+
+        - encfs
+        - fuse
+        - rlog
+
+        # mer-extras repository
+        #######################
+        - less
+        - strace
+        - alsa-plugins-pulseaudio
+        - xorg-x11-drv-evdev
+        - xorg-x11-drv-mtev
+        - dbus-x11
+        #libqtdeclarative4-gestures
+
+        # New stuff to get closer to the x86 mer image
+        - bluetooth-qt
+        - contextkit-meego-battery-upower
+        - contextkit-meego
+        - cpio
+        - device-mapper-libs
+        - device-mapper
+        - gdb
+        #- generic-logos
+        - libusb1
+        - mlite
+        #- mtools
+        - openssh-clients
+        - openssh-server
+        - openssh
+        #- parted
+        - pm-utils
+        #- rsync
+        - tar
+        - upower
+        - xterm
+        - less
+        - strace
+        - plasma-contour-config-blacklist
+
+        #- kde-runtime-debuginfo
+        #- kde-workspace-debuginfo
+        #- kdelibs-debuginfo
+        #- plasma-mobile-debuginfo
+        #- glibc-debuginfo
+        #- polkit-debuginfo
+        #- polkit-qt-1-debuginfo
+
+
+        PostScripts:
+        - vivaldi/free-space.post
+        - vivaldi/setcursor.post
+        - vivaldi/key-import-workaround.post
+        - vivaldi/prelink.post
+        - vivaldi/setup-xsession.post
+        - vivaldi/set-architecture.post
+        - vivaldi/tty2-session.post
+        - vivaldi/workaround-remove-pulseaudio.post
+
+        NoChrootScripts:
+        - vivaldi/img-name.post
+        - vivaldi/xorg-config.post
+

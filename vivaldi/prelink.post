@@ -1,13 +1,8 @@
- 
-# We can run the prelink only with qemu version 0.14 and newer.
-qemu-arm-static -version | grep "0\.14"
 
-if [ "x$?" == "x0" ]; then
-    echo "QEMU version 0.14 running prelink."
-    # Prelink can reduce boot time
-    if [ -x /usr/sbin/prelink ]; then
-        /usr/sbin/prelink -aRqm
-    fi
-else
-    echo "QEMU version is not 0.14 so not running prelink."
+# Prelink can reduce boot time
+if [ -x /usr/sbin/prelink ]; then
+    /usr/sbin/prelink -aRqm
 fi
+
+echo "export KDE_IS_PRELINKED=1">/etc/profile.d/kde.sh
+

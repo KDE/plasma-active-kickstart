@@ -121,6 +121,17 @@ kdialog
 # add some simple testing tools
 simple-tests
 sample-media
+ConsoleKit
+ConsoleKit-libs
+ConsoleKit-x11
+dhclient
+libpcap
+ModemManager
+NetworkManager
+NetworkManager-glib
+NetworkManager-kde
+NetworkManager-kde-libs
+plasmoid-networkmanagement
 
 # add kde-security packages
 encfs
@@ -136,10 +147,12 @@ kshisen
 kmahjongg
 kpat
 kreversi
+
+
 # Apps
 bangarang
 kwrite
-ksnapshot
+
 
 # adaptation-x86-generic repository
 ###################################

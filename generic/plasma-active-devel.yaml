@@ -43,8 +43,6 @@ Plasma Active:
         - mer-plasma-shared
         - plasma
 
-        Part: vivaldi/partitions
-
         # user setup
         RootPass: mer
         DefaultUser: mer
@@ -222,18 +220,14 @@ Plasma Active:
         #- polkit-debuginfo
         #- polkit-qt-1-debuginfo
 
-
         PostScripts:
-        - vivaldi/free-space.post
-        - vivaldi/setcursor.post
-        - vivaldi/key-import-workaround.post
-        - vivaldi/prelink.post
-        - vivaldi/setup-xsession.post
-        - vivaldi/set-architecture.post
-        - vivaldi/tty2-session.post
-        - vivaldi/workaround-remove-pulseaudio.post
+        - generic/free-space.post
+        - generic/setcursor.post
+        - generic/key-import-workaround.post
+        - generic/prelink.post
+        - generic/setup-xsession.post
+        - generic/tty2-session.post
+        - generic/enablefuse.post
 
         NoChrootScripts:
-        - vivaldi/img-name.post
-        - vivaldi/xorg-config.post
-
+        - generic/img-name.post

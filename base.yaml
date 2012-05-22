@@ -1,5 +1,7 @@
 ExternalConfigs:
      - vivaldi
+     - generic
+     - x86
 
 Configurations:
         - Name: plasma-active-armv7hl-vivaldi-devel
@@ -7,5 +9,14 @@ Configurations:
           Inherit:    
             - ARMv7 hardfp architecture
             - Plasma Active
+            - Vivaldi
           FileName: plasma-active-armv7hl-vivaldi-devel
+
+        - Name: plasma-active-x86-devel
+          Active: True
+          Inherit:    
+            - SSSE3 enabled X86 architecture
+            - Plasma Active
+            - Generic x86 Plasma Active device
+          FileName: plasma-active-x86-devel
 

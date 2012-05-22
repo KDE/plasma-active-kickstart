@@ -1,0 +1,7 @@
+Generic x86 Plasma Active device:
+        Part: x86/partitions
+
+        BootloaderTimeout: 0
+        BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+
+        Kernel: kernel-adaptation-pc

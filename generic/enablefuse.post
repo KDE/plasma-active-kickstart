@@ -1,0 +1,6 @@
+ 
+# kde-security: load the fuse module
+#echo "/sbin/modprobe fuse" >> /etc/modprobe.d/dist.conf
+mkdir -p /etc/modules-load.d/
+echo "fuse" > /etc/modules-load.d/fuse.conf
+

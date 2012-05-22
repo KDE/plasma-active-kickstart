@@ -1,0 +1,11 @@
+
+Vivaldi:
+        Part: vivaldi/partitions
+
+        PostScripts:
+        - vivaldi/set-architecture.post
+        - vivaldi/workaround-remove-pulseaudio.post
+
+        NoChrootScripts:
+        - vivaldi/xorg-config.post
+

@@ -175,8 +175,6 @@ Plasma Active:
         # Apps
         - bangarang
         - kwrite
-        - ksnapshot
-        #- nepomukshell
 
         - encfs
         - fuse
@@ -212,10 +210,9 @@ Plasma Active:
         #- rsync
         - tar
         - upower
-        - xterm
         - less
         - strace
-        - plasma-contour-config-blacklist
+        #- plasma-contour-config-blacklist
 
         #- kde-runtime-debuginfo
         #- kde-workspace-debuginfo

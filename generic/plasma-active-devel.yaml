@@ -28,6 +28,10 @@ Repositories:
 - Name: plasma
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 
+#x86 specific
+- Name: adaptation-x86-generic
+  Url: http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/
+
 Plasma Active:
         Language: en_US.UTF-8
         Keyboard: us

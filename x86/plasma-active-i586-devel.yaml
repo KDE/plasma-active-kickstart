@@ -5,3 +5,12 @@ Generic x86 Plasma Active device:
         BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
 
         Kernel: kernel-adaptation-pc
+
+        Repos:
+        - adaptation-x86-generic
+
+        Groups:
+        - Intel x86 Generic Support
+
+        ExtraPackages:
+        - mesa-x86-generic

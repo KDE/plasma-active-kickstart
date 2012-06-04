@@ -27,6 +27,8 @@ Repositories:
   Url: http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_@ARCH@
 - Name: plasma
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
+- Name: adapted-core-packages
+  Url: http://repo.pub.meego.com/home:/mart:/branches:/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 
 #x86 specific
 - Name: adaptation-x86-generic

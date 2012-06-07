@@ -196,8 +196,8 @@ Plasma Active:
 
         # New stuff to get closer to the x86 mer image
         - bluetooth-qt
-        - contextkit-meego-battery-upower
-        - contextkit-meego
+        #- contextkit-meego-battery-upower
+        #- contextkit-meego
         - cpio
         - device-mapper-libs
         - device-mapper

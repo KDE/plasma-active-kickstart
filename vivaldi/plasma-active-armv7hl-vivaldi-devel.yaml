@@ -9,6 +9,8 @@ Vivaldi:
         - vivaldi-adation
 
         ExtraPackages:
+        - -systemd
+        - -systemd-sysv
         - mingetty
         - sysvinit
         - sysvinit-tools

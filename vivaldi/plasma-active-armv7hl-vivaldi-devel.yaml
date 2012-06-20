@@ -2,6 +2,9 @@
 Repositories:
 - Name: vivaldi-adation
   Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Vivaldi/CE_UX_PlasmaActive_CE_MW_PlasmaActive_@ARCH@
+- Name: vivaldi-release
+  Url: http://repo.pub.meego.com/Project:/KDE:/VivaldiRelease/CE_UX_PlasmaActive_CE_MW_PlasmaActive_@ARCH@
+
 Vivaldi:
         Part: vivaldi/partitions
 

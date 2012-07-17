@@ -247,13 +247,6 @@ rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 # Work around for camera
 rm /usr/lib/gstreamer-0.10/libgstcamerabin.so
 
-# Create a file for important details about the image
-echo "2012-02-01-10-03-basyskom-plasma-active-testing-mer-usb-live" >> /etc/image-release
-echo "" >> /etc/image-release
-echo "Initial Packages:" >> /etc/image-release
-rpm -qa | sort >> /etc/image-release
-
-
 %end
 
 %post --nochroot

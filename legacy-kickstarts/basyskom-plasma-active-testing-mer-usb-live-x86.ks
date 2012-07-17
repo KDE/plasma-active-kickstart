@@ -8,26 +8,21 @@
 lang en_US.UTF-8
 keyboard us
 timezone --utc Europe/Berlin
-part / --size 3000 --ondisk sda --fstype=ext3
+part / --size 3000 --ondisk sda --fstype=ext4
 rootpw mer
 xconfig --startxonboot
-# bootloader --timeout=0 --append="quiet"
 bootloader  --timeout=0 --menu="autoinst:Installation:systemd.unit=installer-shell.service"
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-
 repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586 --save --debuginfo
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo
 repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/i586/debug/ --save --debuginfo
-
 repo --name=mer-shared  --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo
 repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_i586/ --save --debuginfo
 repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Mer_Extras_i586/ --save --debuginfo
-
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk:/Testing/CE_UX_PlasmaActive_i586/ --save --debuginfo
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo
-
 
 %packages
 #custom-kernel
@@ -36,10 +31,12 @@ kernel-adaptation-pc
 
 # ce_tools repository
 #####################
-alsa-utils
 
 # mer-core repository
 ####################
+
+@Mer Core Utils
+# connman-test diffutils openssh-clients vim-enhanced tar
 
 @Mer Core
 # Mer Core defines following packages (06 dec 2011)
@@ -61,40 +58,26 @@ alsa-utils
 # xorg-x11-server-Xorg xorg-x11-xauth
 
 # Additional packages from mercore repository
-connman-test
 cpio
-dbus
-dbus-x11
-diffutils
 gzip
-#libdrm
-#mailcap
-#mesa-dri-i915-driver
-#mesa-dri-i965-driver
-mesa-dri-swrast-driver
-#mesa-libEGL
-#mesa-libGL
-openssh-clients
 openssh-server
-pulseaudio
-qt-mobility
-qt-qmlviewer
-libqtdeclarative4-gestures
 libqtwebkit-qmlwebkitplugin
-libdeclarative-multimedia
-sed
-sensorfw
-tar
-vim-enhanced
 xorg-x11-drv-fbdev
 xorg-x11-drv-vesa
 xorg-x11-utils-xhost
+# get virtualbox running
+xorg-x11-server-Xorg-setuid
+# FIXME - packages should explicitly depend on it
+dbus-x11
+libqtdeclarative4-gestures
+libdeclarative-multimedia
+alsa-utils
 
 
 # mer-shared repository
 #######################
-
-@Nemo Middleware Shared
+# not needed
+# @Nemo Middleware Shared 
 # Nemo Middleware Shared defines following packages (06 dec 2011)
 # maliit-framework maliit-plugins ohm
 
@@ -108,8 +91,6 @@ pulseaudio-policy-enforcement
 # mer-plasma-shared repository
 ##############################
 iodbc
-# Hopefully not needed
-# iodbc-admin
 
 # plasma repository
 ###################
@@ -131,17 +112,27 @@ kde-runtime-sounds
 kde-runtime-wallet
 kmix
 plasma-active
-plasma-active-config-blacklist
 plasma-mobile-mouse
 startactive
 virtuoso
 virtuoso-drivers
 virtuoso-server
-# Required by installdbgsymbols.sh
+# Required by kde-workspace crash helper tool installdbgsymbols.sh
 kdialog
-
 # add some simple testing tools
 simple-tests
+sample-media
+ConsoleKit
+ConsoleKit-libs
+ConsoleKit-x11
+dhclient
+libpcap
+ModemManager
+NetworkManager
+NetworkManager-glib
+NetworkManager-kde
+NetworkManager-kde-libs
+plasmoid-networkmanagement
 
 # add kde-security packages
 encfs
@@ -157,10 +148,12 @@ kshisen
 kmahjongg
 kpat
 kreversi
+
+
 # Apps
 bangarang
 kwrite
-ksnapshot
+
 
 # adaptation-x86-generic repository
 ###################################
@@ -169,9 +162,7 @@ ksnapshot
 # acpid linux-firmware installer-shell xorg-x11-drv-mtev xorg-x11-drv-synaptics
 # xorg-x11-drv-intel mesa-dri-i915-driver mesa-dri-i965-driver mesa-libGLESv2
 # contextkit-meego-battery-upower
-
-# The kernel should be taken from the custom-kernel repo
-#kernel-adaptation-pc
+mesa-x86-generic
 
 # mer-extras repository
 #######################
@@ -180,9 +171,7 @@ less
 strace
 xorg-x11-drv-mtev
 
-# peregrine repository
-######################
-#peregrine-tablet-common
+
 -okular
 
 %end
@@ -200,29 +189,22 @@ fi
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
-# Add work-a-round to get virtualbox running
-chmod u+s /usr/bin/Xorg
-
-# verify link of flash plugin
-if [ -f /usr/lib/flash-plugin/setup ]; then
-    sh /usr/lib/flash-plugin/setup install
-    rm -f /root/oldflashplugins.tar.gz
-fi
 
 echo "DISPLAYMANAGER=\"uxlaunch\"" >> /etc/sysconfig/desktop
-# echo "session=/usr/bin/startactive" >> /etc/sysconfig/uxlaunch
-# cursor not needed with plasma-mobile-mouse package installed
-#echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
 
-# Create a session file X-MEEGO-HS.desktop
-echo "[Desktop Entry]" >> /usr/share/xsessions/X-MEEGO-HS.desktop
-echo "Version=1.0" >> /usr/share/xsessions/X-MEEGO-HS.desktop
-echo "Name=mtf compositor session" >> /usr/share/xsessions/X-MEEGO-HS.desktop
-echo "Exec=/usr/bin/startactive" >> /usr/share/xsessions/X-MEEGO-HS.desktop
-echo "Type=Application" >> /usr/share/xsessions/X-MEEGO-HS.desktop
+
+# Create a session file x-plasma-active.desktop
+echo "[Desktop Entry]" >> /usr/share/xsessions/x-plasma-active.desktop
+echo "Version=1.0" >> /usr/share/xsessions/x-plasma-active.desktop
+echo "Name=mtf compositor session" >> /usr/share/xsessions/x-plasma-active.desktop
+echo "Exec=/usr/bin/startactive" >> /usr/share/xsessions/x-plasma-active.desktop
+echo "Type=Application" >> /usr/share/xsessions/x-plasma-active.desktop
 
 # Set symlink pointing to .desktop file 
-ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
+ln -sf x-plasma-active.desktop /usr/share/xsessions/default.desktop
+
+# Workaround to enable debug packages
+sed -i 's/enabled=0/enabled=1/g' /etc/zypp/repos.d/*.repo
 
 echo "10-pegatron" > /etc/boardname-override
 echo "10-pegatron" > /etc/boardname
@@ -233,14 +215,6 @@ cp /etc/sensorfw/sensord.conf.d/* /etc/sensorfw/
 mkdir -p /etc/modules-load.d/
 echo "fuse" > /etc/modules-load.d/fuse.conf
 
-# Work around for eGalax Touchscreen
-cp /etc/X11/xorg.conf.d/60-cando-mtev.conf /etc/X11/xorg.conf.d/60-egalax-mtev.conf
-sed -i s/"Cando Multi Touch Panel"/"eGalax Touchscreen"/ /etc/X11/xorg.conf.d/60-egalax-mtev.conf
-sed -i s/Cando/eGalax/ /etc/X11/xorg.conf.d/60-egalax-mtev.conf
-
-# Copy boot and shutdown images
-cp /usr/share/themes/1024-600-10/images/system/boot-screen.png /usr/share/plymouth/splash.png
-cp /usr/share/themes/1024-600-10/images/system/shutdown-screen.png /usr/share/plymouth/shutdown-1024x600.png
 # work around for maemo6 sensor crash
 rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 

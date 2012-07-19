@@ -109,6 +109,7 @@ kde-runtime-plasma
 kde-runtime-solid
 kde-runtime-sounds
 kde-runtime-wallet
+konsole
 kmix
 plasma-active
 plasma-mobile-mouse

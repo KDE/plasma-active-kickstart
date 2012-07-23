@@ -50,6 +50,7 @@ kernel-adaptation-pc
 
 #remove connman
 -connman
+-connman-test
 
 @Mer Graphics Common
 # Mer Graphics Common defines following packages (06 dec 2011)

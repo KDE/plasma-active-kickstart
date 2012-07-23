@@ -48,6 +48,9 @@ kernel-adaptation-pc
 # Mer Connectivity defines following packages (06 dec 2011)
 # bluez connman crda iproute iputils net-tools ofono wireless-tools wpa_supplicant
 
+#remove connman
+-connman
+
 @Mer Graphics Common
 # Mer Graphics Common defines following packages (06 dec 2011)
 # cjkuni-fonts droid-sans-fonts droid-sans-mono-fonts droid-serif-fonts liberation-fonts-common

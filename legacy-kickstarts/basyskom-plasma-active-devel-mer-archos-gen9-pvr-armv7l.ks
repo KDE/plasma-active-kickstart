@@ -162,8 +162,8 @@ kwrite
 # adaptation-archos-gen9 repository
 ###################################
 alsa-mixer-asound-state-archos-gen9
-plasma-mobile-config-archos-gen9
-plasma-mobile-config-archos-gen9-blacklist
+plasma-mobile-config-archos-gen9-pvr
+plasma-mobile-config-archos-gen9-pvr-blacklist
 kernel-adaptation-archos-gen9-pvr
 pixcir-touch-callibration
 xorg-conf-archos-gen9

@@ -15,14 +15,14 @@ bootloader --timeout=0 --append="quiet"
 desktop --autologinuser=meego
 user --name meego  --groups audio,video --password meego
 
-repo --name=1.2-oss --baseurl=http://repo.meego.com/MeeGo/builds/1.2.0.90/1.2.0.90.12.20110809.2/repos/oss/ia32/packages/ --cost=99 --save --debug --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=1.2-oss --baseurl=http://repo.meego.com/MeeGo/builds/1.2.0.90/1.2.0.90.12.20110809.2/repos/oss/ia32/packages/ --save --debug --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
-repo --name=1.2-non-oss --baseurl=http://repo.meego.com/MeeGo/builds/1.2.0.90/1.2.0.90.12.20110809.2/repos/non-oss/ia32/packages/ --cost=99 --save --debug --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=1.2-non-oss --baseurl=http://repo.meego.com/MeeGo/builds/1.2.0.90/1.2.0.90.12.20110809.2/repos/non-oss/ia32/packages/ --save --debug --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
-repo --name=kde-devel-1.2-stable --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/MeeGo_1.2_OSS/ --cost=99 --save --debug
+repo --name=kde-devel-1.2-stable --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/MeeGo_1.2_OSS/ --save --debug
 
 # Add peregrine development repository
-repo --name=peregrine-development --baseurl=http://repo.pub.meego.com/home:/mdfe:/peregrine/MeeGo_1.2_OSS/ --cost=99 --save
+repo --name=peregrine --baseurl=http://repo.pub.meego.com/home:/mdfe:/peregrine/MeeGo_1.2_OSS/ --save
 
 
 %packages
@@ -53,7 +53,7 @@ util-linux
 #util-linux-ng
 
 # Add peregrine communicator
-peregrine-unstable-tablet-common
+peregrine-tablet-common
 
 # Needed devel tools
 #qt-devel-tools

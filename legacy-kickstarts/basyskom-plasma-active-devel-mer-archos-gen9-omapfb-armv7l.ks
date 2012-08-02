@@ -64,6 +64,7 @@ xorg-x11-drv-evdev
 xorg-x11-drv-fbdev
 xorg-x11-drv-vesa
 xorg-x11-utils-xhost
+mesa-llvmpipe-dri-swrast-driver
 # get virtualbox running
 xorg-x11-server-Xorg-setuid
 # FIXME - packages should explicitly depend on it

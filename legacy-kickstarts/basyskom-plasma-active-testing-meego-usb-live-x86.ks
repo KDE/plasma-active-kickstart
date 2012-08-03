@@ -185,7 +185,7 @@ meego-ux-components
 
 # Add some basyskom demos
 patientcare
-peregrine-unstable-tablet-common
+peregrine-tablet-common
 smarthome
 
 %end

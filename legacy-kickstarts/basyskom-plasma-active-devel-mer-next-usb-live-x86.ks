@@ -29,6 +29,8 @@ repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/Mer_C
 
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core-next_i586/ --save
 
+repo --name=adaptation --baseurl=http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_Mer_Core-next_CE_UX_PlasmaActive_i586/ --save
+
 %packages
 #custom-kernel
 ##############

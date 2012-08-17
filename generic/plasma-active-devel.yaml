@@ -29,10 +29,9 @@ Repositories:
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 - Name: adapted-core-packages
   Url: http://repo.pub.meego.com/home:/mart:/branches:/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
+- Name: adaptation
+  Url: http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@
 
-#x86 specific
-- Name: adaptation-x86-generic
-  Url: http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/
 
 Plasma Active:
         Language: en_US.UTF-8

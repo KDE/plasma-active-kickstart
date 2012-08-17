@@ -21,6 +21,8 @@ repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Ext
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_armv7l/ --save
 repo --name=adaptation-archos-gen9 --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Devel_CE_UX_PlasmaActive_armv7l/ --save
 repo --name=adaptation-archos-gen9-pvr --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Devel_CE_UX_PlasmaActive_armv7l/ --save
+repo --name=adaptation --baseurl=http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_armv7l/ --save
+
 
 %packages
 # ce_tools repository

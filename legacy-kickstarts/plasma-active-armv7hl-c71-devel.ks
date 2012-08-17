@@ -26,7 +26,7 @@ repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv
 repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_armv7hl/ --debuginfo --save
 
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_armv7hl/ --debuginfo --save
-
+repo --name=adaptation --baseurl=http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_armv7hl/ --save
 
 
 %packages

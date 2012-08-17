@@ -127,6 +127,7 @@ virtuoso-server
 kdepim-strigi-plugins
 kmix
 plasma-mobile-config-default-blacklist
+bodega-client
 
 #prevent conflicts
 libthreadweaver

@@ -93,7 +93,6 @@ alsa-utils
 # Additional packages from mer-shared repository
 gdb
 gst-plugins-good
-xterm
 ca-certificates
 pulseaudio-policy-enforcement
 
@@ -143,6 +142,7 @@ NetworkManager-glib
 NetworkManager-kde
 NetworkManager-kde-libs
 plasmoid-networkmanagement
+plasma-mobile-config-default-blacklist
 
 # add kde-security packages
 encfs

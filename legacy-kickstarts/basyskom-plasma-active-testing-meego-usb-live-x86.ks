@@ -125,6 +125,7 @@ virtuoso-drivers
 virtuoso-server
 kdepim-strigi-plugins
 kmix
+plasma-mobile-config-default-blacklist
 
 #prevent conflicts
 libthreadweaver

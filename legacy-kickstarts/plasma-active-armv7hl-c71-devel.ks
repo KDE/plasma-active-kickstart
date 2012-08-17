@@ -40,7 +40,6 @@ repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX
 
 openssh-clients
 openssh-server
-xterm
 vim-enhanced
 
 # Additional packages from mercore repository
@@ -193,7 +192,7 @@ upower
 xterm
 less
 strace
-plasma-contour-config-blacklist
+plasma-mobile-config-default-blacklist
 
 #kde-runtime-debuginfo
 #kde-workspace-debuginfo

@@ -23,8 +23,6 @@ repo --name=mer-shared  --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_C
 
 repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/Mer_Core-next_CE_MW_Shared_i586/ --save
 
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/next_Mer_Extras_i586/ --save
-
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/Mer_Core-next_CE_UX_PlasmaActive_i586/ --save
 
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core-next_i586/ --save
@@ -176,14 +174,6 @@ kwrite
 # xorg-x11-drv-intel mesa-dri-i915-driver mesa-dri-i965-driver mesa-libGLESv2
 # contextkit-meego-battery-upower
 mesa-x86-generic
-
-# mer-extras repository
-#######################
-alsa-plugins-pulseaudio
-less
-strace
-xorg-x11-drv-mtev
-
 
 -okular
 

@@ -18,10 +18,9 @@ user --name mer  --groups audio,video --password mer
 repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586 --save --debug
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save
 repo --name=mer-shared  --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save
-repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_i586/ --save
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_i586/ --save
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_i586/ --save
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save
-repo --name=adaptation --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_i586/ --save
 
 
 %packages

@@ -16,11 +16,9 @@ repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save
 repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/debug/ --save
 repo --name=mer-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/ --save
-repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_armv7l/ --save
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Mer_Extras_armv7l/ --save
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_armv7l/ --save
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_armv7l/ --save
 repo --name=adaptation-archos-gen9 --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Devel_CE_UX_PlasmaActive_armv7l/ --save
-repo --name=adaptation --baseurl=http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_armv7l/ --save
 
 %packages
 # ce_tools repository

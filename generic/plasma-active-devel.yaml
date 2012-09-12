@@ -25,11 +25,6 @@ Repositories:
   Url: http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@
 - Name: plasma
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
-- Name: adapted-core-packages
-  Url: http://repo.pub.meego.com/home:/mart:/branches:/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
-- Name: adaptation
-  Url: http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@
-
 
 Plasma Active:
         Language: en_US.UTF-8
@@ -43,7 +38,6 @@ Plasma Active:
         - mer-extras
         - mer-shared
         - ce_tools
-        - mer-plasma-shared
         - plasma
 
         # user setup

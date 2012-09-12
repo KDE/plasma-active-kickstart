@@ -18,13 +18,11 @@ Repositories:
 - Name: mer-core-debug
   Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/debug
 - Name: mer-extras
-  Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Mer_Extras_@ARCH@
+  Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_@ARCH@/
 - Name: mer-shared
   Url: http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@
 - Name: ce_tools
   Url: http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@
-- Name: mer-plasma-shared
-  Url: http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_@ARCH@
 - Name: plasma
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 - Name: adapted-core-packages

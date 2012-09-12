@@ -89,10 +89,6 @@ gst-plugins-good
 ca-certificates
 pulseaudio-policy-enforcement
 
-# mer-plasma-shared repository
-##############################
-iodbc
-
 # plasma repository
 ###################
 contour
@@ -178,6 +174,7 @@ less
 strace
 xorg-x11-drv-omapfb
 xorg-x11-drv-mtev
+iodbc
 
 
 -okular

@@ -19,14 +19,10 @@ user --name mer  --groups audio,video --password mer
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages --save --debuginfo --source
 repo --name=mer-core-debug --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/debug --save --debuginfo --source
-
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Mer_Extras_armv7hl/ --debuginfo --save
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_armv7hl/ --debuginfo --save
 repo --name=mer-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --debuginfo --save 
 repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl --debuginfo --save 
-repo --name=mer-plasma-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/PlasmaActive/CE_MW_Shared_armv7hl/ --debuginfo --save
-
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_armv7hl/ --debuginfo --save
-repo --name=adaptation --baseurl=http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation/Project_KDE_Devel_CE_UX_PlasmaActive_armv7hl/ --save
 
 
 %packages
@@ -78,11 +74,6 @@ gst-plugins-good
 #ca-certificates
 pulseaudio-policy-enforcement
 
-# mer-plasma-shared repository
-##############################
-iodbc
-# Hopefully not needed
-# iodbc-admin
 
 gdb
 gdb-gdbserver
@@ -167,6 +158,7 @@ alsa-plugins-pulseaudio
 xorg-x11-drv-evdev
 xorg-x11-drv-mtev
 dbus-x11
+iodbc
 #libqtdeclarative4-gestures
 
 # New stuff to get closer to the x86 mer image

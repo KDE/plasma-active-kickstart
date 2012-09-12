@@ -89,7 +89,7 @@ gst-plugins-good
 ca-certificates
 pulseaudio-policy-enforcement
 
-# mer-plasma-shared repository
+# mer-extras repository
 ##############################
 iodbc
 

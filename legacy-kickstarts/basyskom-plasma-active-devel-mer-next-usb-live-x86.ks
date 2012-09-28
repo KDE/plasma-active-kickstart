@@ -217,6 +217,9 @@ rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 # Work around for camera
 rm /usr/lib/gstreamer-0.10/libgstcamerabin.so
 
+#avoid kernel updates, currently broken
+zypper mr -d adaptation-x86-generic
+
 %end
 
 %post --nochroot

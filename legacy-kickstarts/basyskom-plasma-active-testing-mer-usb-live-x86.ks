@@ -221,8 +221,13 @@ rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 # Work around for camera
 rm /usr/lib/gstreamer-0.10/libgstcamerabin.so
 
-#avoid kernel updates, currently broken
+# avoid kernel updates, currently broken
+# on testing get updates only from the plasma repo
 zypper mr -d adaptation-x86-generic
+zypper mr -d ce_tools
+zypper mr -d mer-core
+zypper mr -d mer-shared
+zypper mr -d mer-extras
 
 %end
 

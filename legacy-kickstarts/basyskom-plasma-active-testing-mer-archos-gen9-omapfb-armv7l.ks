@@ -193,6 +193,13 @@ fi
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
+# avoid kernel updates, currently broken
+# on testing get updates only from the plasma repo
+zypper mr -d adaptation-x86-generic
+zypper mr -d ce_tools
+zypper mr -d mer-core
+zypper mr -d mer-shared
+zypper mr -d mer-extras
 
 
 # Create empty initramfs.cpio.lzo for NAND deployment

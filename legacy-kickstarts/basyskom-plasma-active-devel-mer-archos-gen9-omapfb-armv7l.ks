@@ -131,7 +131,6 @@ NetworkManager-glib
 NetworkManager-kde
 NetworkManager-kde-libs
 plasmoid-networkmanagement
-plasma-mobile-config-default-blacklist
 bodega-client
 
 # add kde-security packages

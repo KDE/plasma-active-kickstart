@@ -192,6 +192,10 @@ syslinux
 xorg-x11-drv-intel
 xorg-x11-drv-mtev
 xorg-x11-drv-synaptics
+mesa-dri-i915-driver
+mesa-dri-i965-driver
+mesa-libGLESv2
+contextkit-meego-battery-upower
 
 # mer-extras repository
 #######################

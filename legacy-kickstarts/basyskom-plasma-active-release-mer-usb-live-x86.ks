@@ -192,9 +192,9 @@ syslinux
 xorg-x11-drv-intel
 xorg-x11-drv-mtev
 xorg-x11-drv-synaptics
-mesa-dri-i915-driver
-mesa-dri-i965-driver
-mesa-libGLESv2
+mesa-x86-generic-dri-i915-driver
+mesa-x86-generic-dri-i965-driver
+mesa-x86-generic-libGLESv2
 contextkit-meego-battery-upower
 
 # mer-extras repository
@@ -257,10 +257,6 @@ rm /usr/lib/gstreamer-0.10/libgstcamerabin.so
 # avoid kernel updates, currently broken
 # on testing get updates only from the plasma repo
 zypper mr -d adaptation-x86-generic
-zypper mr -d ce_tools
-zypper mr -d mer-core
-zypper mr -d mer-shared
-zypper mr -d mer-extras
 
 %end
 

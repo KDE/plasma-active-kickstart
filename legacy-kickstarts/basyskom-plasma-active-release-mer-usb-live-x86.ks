@@ -15,13 +15,21 @@ bootloader  --timeout=0 --menu="autoinst:Installation:systemd.unit=installer-she
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586 --save --debuginfo
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo
-repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/i586/debug/ --save --debuginfo
-repo --name=mer-shared  --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_i586/ --save --debuginfo
-repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk/CE_UX_PlasmaActive_i586/ --save --debuginfo
+# repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586 --save --debuginfo
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/i586/packages/ --save --debuginfo
+
+repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/i586/debug/ --save --debuginfo
+
+repo --name=mer-shared --baseurl=http://repo.pub.meego.com/Project:/KDE:/CE:/MW:/Shared/Mer_Core_0.20120816.1_i586/ --save --debuginfo
+
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_i586/ --save --debuginfo
+
+repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_i586/ --save --debuginfo
+
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo
+
+# repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/x86-generic/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_i586/ --save --debuginfo
+
 
 %packages
 #custom-kernel
@@ -157,12 +165,33 @@ kwrite
 
 # adaptation-x86-generic repository
 ###################################
-@Intel x86 Generic Support
+#@Intel x86 Generic Support
 #Intel x86 Generic Support defines following packages (08 dec 2011)
 # acpid linux-firmware installer-shell xorg-x11-drv-mtev xorg-x11-drv-synaptics
 # xorg-x11-drv-intel mesa-dri-i915-driver mesa-dri-i965-driver mesa-libGLESv2
 # contextkit-meego-battery-upower
 mesa-x86-generic
+
+acpid
+btrfs-progs
+generic-logos
+grubby
+installer-shell
+kernel-adaptation-pc
+linux-firmware
+mesa-x86-generic
+mkinitrd
+mtdev
+mtools
+newt
+parted
+pattern-x86-vm
+rsync
+slang
+syslinux
+xorg-x11-drv-intel
+xorg-x11-drv-mtev
+xorg-x11-drv-synaptics
 
 # mer-extras repository
 #######################

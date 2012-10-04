@@ -26,8 +26,6 @@ repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Ext
 
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_i586/ --save --debuginfo
 
-#repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo
-
 repo --name=adaptation-x86-generic --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/x86-generic/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_i586/ --save --debuginfo
 
 

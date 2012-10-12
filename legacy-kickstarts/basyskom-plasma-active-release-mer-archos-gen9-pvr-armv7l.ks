@@ -18,7 +18,7 @@ repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases
 
 repo --name=mer-shared --baseurl=http://repo.pub.meego.com/Project:/KDE:/CE:/MW:/Shared/Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
 
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_armv7l/ --save --debuginfo
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
 
 repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
 

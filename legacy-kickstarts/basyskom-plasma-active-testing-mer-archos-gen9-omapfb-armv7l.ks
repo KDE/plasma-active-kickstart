@@ -12,13 +12,17 @@ rootpw mer
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7l --save
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save
-repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/debug/ --save
-repo --name=mer-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/ --save
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_armv7l/ --save
-repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk:/Testing/CE_UX_PlasmaActive_armv7l/ --save
-repo --name=adaptation-archos-gen9 --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Trunk_Testing_CE_UX_PlasmaActive_armv7l/ --save
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/armv7l/packages/ --save
+
+repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/armv7l/debug/ --save
+
+repo --name=mer-shared --baseurl=http://repo.pub.meego.com/Project:/KDE:/CE:/MW:/Shared/Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+
+repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+
+repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk:/Testing/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+
+repo --name=adaptation-archos-gen9 --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Trunk_Testing_0.20120816.1_armv7l/ --save --debuginfo
 
 %packages
 # ce_tools repository
@@ -131,6 +135,7 @@ NetworkManager-glib
 NetworkManager-kde
 NetworkManager-kde-libs
 plasmoid-networkmanagement
+bodega-client
 
 # add kde-security packages
 encfs
@@ -175,7 +180,6 @@ xorg-x11-drv-omapfb
 xorg-x11-drv-mtev
 iodbc
 
-
 -okular
 
 %end
@@ -193,13 +197,6 @@ fi
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
-# avoid kernel updates, currently broken
-# on testing get updates only from the plasma repo
-zypper mr -d adaptation-x86-generic
-zypper mr -d ce_tools
-zypper mr -d mer-core
-zypper mr -d mer-shared
-zypper mr -d mer-extras
 
 
 # Create empty initramfs.cpio.lzo for NAND deployment

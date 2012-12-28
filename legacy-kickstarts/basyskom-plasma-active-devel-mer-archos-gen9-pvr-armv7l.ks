@@ -12,7 +12,7 @@ rootpw mer
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7l --save
+#repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7l --save
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save
 repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/debug/ --save
 repo --name=mer-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/ --save

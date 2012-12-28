@@ -21,8 +21,6 @@ Repositories:
   Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_@ARCH@/
 - Name: mer-shared
   Url: http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@
-- Name: ce_tools
-  Url: http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@
 - Name: plasma
   Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 
@@ -37,7 +35,6 @@ Plasma Active:
         - mer-core-debug
         - mer-extras
         - mer-shared
-        - ce_tools
         - plasma
 
         # user setup

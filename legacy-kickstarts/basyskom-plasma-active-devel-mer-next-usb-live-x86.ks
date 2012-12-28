@@ -15,7 +15,7 @@ bootloader  --timeout=0 --menu="autoinst:Installation:systemd.unit=installer-she
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core-next_i586 --save --debug
+#repo --name=ce_tools --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core-next_i586 --save --debug
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/next/builds/i586/packages/ --save
 repo --name=mer-shared  --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core-next_i586/ --save
 repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core-next_i586/ --save

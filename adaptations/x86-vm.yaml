@@ -1,0 +1,7 @@
+Nemo Adaptation VM:
+    Mic2Options: -f livecd --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - Nemo x86 Common
+    Groups:
+        - Nemo x86 VM
+      

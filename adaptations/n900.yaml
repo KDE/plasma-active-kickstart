@@ -1,0 +1,14 @@
+Nemo Adaptation N900:
+    Part: n900.partition
+    Mic2Options: -f raw --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - ce-adaptation-n9xx-common
+        - ce-adaptation-n900
+    Groups:
+        - Nemo N900
+    PostScripts:
+        - fstab-n900.post
+        # bq module causes instability, so removing for now.
+        - n900-bq27x00_battery-removal.post

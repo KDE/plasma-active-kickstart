@@ -1,22 +1,62 @@
 ExternalConfigs:
-     - vivaldi
-     - generic
-     - x86
+ # Mer configs base
+  - /usr/share/kickstarter-configs/mer
+  - generic
+  - adaptations
+  - scripts
+
 
 Configurations:
-        - Name: plasma-active-armv7hl-vivaldi-devel
-          Active: True
-          Inherit:    
-            - ARMv7 hardfp architecture
-            - Plasma Active
-            - Vivaldi
-          FileName: plasma-active-armv7hl-vivaldi-devel
+  - Name: Plasma Active N900
+    FileName: plasma-active-armv7hl-n900
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation N900
 
-        - Name: plasma-active-x86-devel
-          Active: True
-          Inherit:    
-            - SSSE3 enabled X86 architecture
-            - Plasma Active
-            - Generic x86 Plasma Active device
-          FileName: plasma-active-x86-devel
+  - Name: Plasma Active N950
+    FileName: plasma-active-armv7hl-n950
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation N950 N9
+
+  - Name: Plasma Active Pandaboard
+    FileName: plasma-active-armv7hl-pandaboard
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation PandaBoard
+    PostScripts:
+        - scripts/pandaboard-sw-cursor-enable.post
+        - scripts/qt-graphicssystem-opengl.post
+        
+  - Name: Plasma Active i586 Virtual Machine
+    FileName: plasma-active-i586-vm
+    RepositoryArchitecture: i586
+    BootloaderTimeout: 0
+    BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Part: x86.partition
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation VM
+        - SSSE3 enabled X86 architecture
+
+  - Name: Plasma Active i486 Virtual Machine
+    FileName: plasma-active-i486-vm
+    BootloaderTimeout: 0
+    BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Part: x86.partition
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation VM
+        - Generic X86 architecture
+
+  - Name: Plasma Active i586
+    FileName: plasma-active-i586
+    RepositoryArchitecture: i586
+    BootloaderTimeout: 0
+    BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Part: x86.partition
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation x86 generic
+        - SSSE3 enabled X86 architecture
 

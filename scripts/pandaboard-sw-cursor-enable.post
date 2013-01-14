@@ -1,0 +1,2 @@
+# Enable sw cursor for pandaboard.
+sed -i 's!Section "Screen"!Section "Screen"\n\tOption\t\t"SWCursor"\t"on"!g' /usr/share/X11/xorg.conf.d/99-pvr.conf

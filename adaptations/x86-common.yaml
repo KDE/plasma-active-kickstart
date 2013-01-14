@@ -1,0 +1,10 @@
+Nemo x86 Common:
+    PartSize: 3000
+    FileSystem: ext3
+    Bootloader: True
+    BootloaderAppend: "quiet"
+    BootloaderTimeout: 0
+    StartX: True
+    Repos:
+        - ce-adaptation-x86-generic
+

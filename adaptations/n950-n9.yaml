@@ -1,0 +1,11 @@
+Nemo Adaptation N950 N9:
+    PartSize: 1500
+    FileSystem: ext3
+    Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - ce-adaptation-n9xx-common
+        - ce-adaptation-n950-n9
+    Groups:
+        - Nemo N950

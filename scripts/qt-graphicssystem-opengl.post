@@ -1,0 +1,5 @@
+# Set QT graphics system to opengl
+cat > /etc/profile.d/qt-graphicssystem-opengl.sh << EOF
+export QT_GRAPHICSSYSTEM=runtime
+export QT_DEFAULT_RUNTIME_SYSTEM=opengl
+EOF

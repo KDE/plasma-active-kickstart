@@ -1,40 +1,18 @@
 
-ARMv7 softfp architecture:
-        Architecture: armv7l
-
-ARMv7 hardfp architecture:
-        Architecture: armv7hl
-
-SSSE3 enabled X86 architecture:
-        Architecture: i586 
-
-Generic X86 architecture:
-        Architecture: i486
-
-
-Repositories: 
-- Name: mer-core
-  Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/packages
-- Name: mer-core-debug
-  Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/debug
-- Name: mer-extras
-  Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/CE_MW_Shared_Mer_Core_@ARCH@/
-- Name: mer-shared
-  Url: http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@
-- Name: plasma
-  Url: http://repo.pub.meego.com/Project:/KDE:/Devel/CE_UX_PlasmaActive_@ARCH@
 
 Plasma Active:
         Language: en_US.UTF-8
         Keyboard: us
         Timezone: UTC
 
+        Active: True
+
         RepositoryOptions: --save --debuginfo --source
         Repos:
         - mer-core
         - mer-core-debug
         - mer-extras
-        - mer-shared
+        - ce-mw-shared
         - plasma
 
         # user setup
@@ -53,6 +31,11 @@ Plasma Active:
         - Nemo Middleware Shared
 
         ExtraPackages:
+        #remove connman
+        - -connman
+        - -connman-test
+        - -okular
+
         #- maliit-framework
         #- maliit-plugins
         #- ohm
@@ -85,10 +68,10 @@ Plasma Active:
         # Needed till pvr acceleration works
         - mesa-llvmpipe-libEGL
 
-        # mer-shared repository
+        # ce-mw-shared repository
         #######################
 
-        # Additional packages from mer-shared repository
+        # Additional packages from ce-mw-shared repository
         - gst-plugins-good
         #- ca-certificates
         - pulseaudio-policy-enforcement
@@ -183,7 +166,6 @@ Plasma Active:
         #libqtdeclarative4-gestures
 
         # New stuff to get closer to the x86 mer image
-        - bluetooth-qt
         #- contextkit-meego-battery-upower
         #- contextkit-meego
         - cpio
@@ -215,13 +197,14 @@ Plasma Active:
         #- polkit-qt-1-debuginfo
 
         PostScripts:
-        - generic/free-space.post
-        - generic/setcursor.post
-        - generic/key-import-workaround.post
-        - generic/prelink.post
-        - generic/setup-xsession.post
-        - generic/tty2-session.post
-        - generic/enablefuse.post
+        - scripts/free-space.post
+        - scripts/setcursor.post
+        - scripts/key-import-workaround.post
+        - scripts/prelink.post
+        - scripts/setup-xsession.post
+        - scripts/tty2-session.post
+        - scripts/enablefuse.post
 
         NoChrootScripts:
-        - generic/img-name.post
+        - scripts/img-name.post
+

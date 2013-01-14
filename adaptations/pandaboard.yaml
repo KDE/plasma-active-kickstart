@@ -1,0 +1,19 @@
+Nemo Adaptation PandaBoard:
+    Part: pandaboard.partition
+    Kernel: kernel-adaptation-pandaboard
+    Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - ce-adaptation-pandaboard
+    ExtraPackages:
+        - xorg-x11-server-Xorg-setuid
+        - pulseaudio-module-x11 
+        - pvr-omap4
+        - pvr-omap4-kernel
+        - pvr-omap4-libEGL
+        - pvr-omap4-libGLESv1
+        - pvr-omap4-libGLESv2
+        - u-boot-omap4panda
+        - x-loader-omap4panda
+        - linux-firmware-ti-connectivity

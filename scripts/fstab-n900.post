@@ -1,0 +1,4 @@
+# Use eMMC swap partition as MeeGo swap as well.
+# Because of the 2nd partition is swap for the partition numbering
+# we can just change the current fstab entry to match the eMMC partition.
+sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab

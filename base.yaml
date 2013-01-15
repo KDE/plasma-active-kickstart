@@ -33,7 +33,10 @@ Configurations:
     RepositoryArchitecture: i586
     BootloaderTimeout: 0
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Kernel: kernel-adaptation-pc
     Part: x86.partition
+    Groups:
+        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation VM
@@ -43,7 +46,10 @@ Configurations:
     FileName: plasma-active-i486-vm
     BootloaderTimeout: 0
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Kernel: kernel-adaptation-pc
     Part: x86.partition
+    Groups:
+        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation VM
@@ -54,7 +60,10 @@ Configurations:
     RepositoryArchitecture: i586
     BootloaderTimeout: 0
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    Kernel: kernel-adaptation-pc
     Part: x86.partition
+    Groups:
+        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation x86 generic

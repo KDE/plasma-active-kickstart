@@ -21,73 +21,51 @@ Plasma Active:
         DefaultUserPass: mer
 
 
-
+        
+        
         Groups:
-        - Mer Core
         - Mer Core Utils
-        - Mer Graphics Common
+        - Mer Core
         - Mer Connectivity
+        - Mer Graphics Common
         - Mer Minimal Xorg
-        - Nemo Middleware Shared
 
         ExtraPackages:
         #remove connman
         - -connman
         - -connman-test
-        - -okular
 
-        #- maliit-framework
-        #- maliit-plugins
-        #- ohm
-        - ohm-plugins-misc
-        - openssh-clients
-        - openssh-server
-        - xterm
-        - vim-enhanced
 
         # Additional packages from mercore repository
         - cpio
         - gzip
-        - connman-test
-        - dbus
-        - dbus-x11
-        - gzip
-        #mesa-dri-swrast-driver
-        - mesa-llvmpipe-dri-swrast-driver 
-        - libqtmultimediakit1
-        - libdeclarative-multimedia
-        - qt-qmlviewer
-        - xorg-x11-drv-evdev
-        - xorg-x11-drv-fbdev
-        - mailcap
-        - usbutils
+        - openssh-server
         - libqtwebkit-qmlwebkitplugin
-        - tar
-        - zypper
+        - xorg-x11-drv-fbdev
+        - xorg-x11-drv-vesa
+        - xorg-x11-utils-xhost
+        # get virtualbox running
+        - xorg-x11-server-Xorg-setuid
+        # FIXME - packages should explicitly depend on it
+        - dbus-x11
+        - libqtdeclarative4-gestures
+        - libdeclarative-multimedia
+        - alsa-utils
 
-        # Needed till pvr acceleration works
-        - mesa-llvmpipe-libEGL
 
-        # ce-mw-shared repository
-        #######################
 
-        # Additional packages from ce-mw-shared repository
+        # Additional packages from mer-shared repository
+        - gdb
         - gst-plugins-good
-        #- ca-certificates
+        - ca-certificates
         - pulseaudio-policy-enforcement
 
-        # mer-plasma-shared repository
+        # mer-extras repository
         ##############################
         - iodbc
-        # Hopefully not needed
-        #- iodbc-admin
-
-        - gdb
-        - gdb-gdbserver
 
         # plasma repository
         ###################
-        - bodega-client
         - contour
         - contour-intro
         - declarative-plasmoids
@@ -104,6 +82,7 @@ Plasma Active:
         - kde-runtime-solid
         - kde-runtime-sounds
         - kde-runtime-wallet
+        - konsole
         - kmix
         - plasma-active
         - plasma-mobile-mouse
@@ -111,31 +90,29 @@ Plasma Active:
         - virtuoso
         - virtuoso-drivers
         - virtuoso-server
-        # required by installdbgsymbols.sh
+        # Required by kde-workspace crash helper tool installdbgsymbols.sh
         - kdialog
         # add some simple testing tools
         - simple-tests
         - sample-media
-        - kde-artwork-active-800-480
-
-        # NetworkManager stuff
         - ConsoleKit
         - ConsoleKit-libs
         - ConsoleKit-x11
         - dhclient
         - libpcap
         - ModemManager
-        #- ModemManager-debuginfo
         - NetworkManager
         - NetworkManager-glib
         - NetworkManager-kde
         - NetworkManager-kde-libs
         - plasmoid-networkmanagement
-        - ppp
-        #- strongswan
-        #- NetworkManager-kde-novellvpn
-        #- NetworkManager-kde-openvpn
-        #- NetworkManager-kde-strongswan
+        - plasma-mobile-config-default-blacklist
+        - bodega-client
+
+        # add kde-security packages
+        - encfs
+        - fuse
+        - rlog
 
         # Games
         - lskat
@@ -148,53 +125,12 @@ Plasma Active:
         - kreversi
 
         # Apps
-        - bangarang
         - kwrite
+        - plasma-mediacenter
 
-        - encfs
-        - fuse
-        - rlog
+        - -okular
 
-        # mer-extras repository
-        #######################
-        - less
-        - strace
-        - alsa-plugins-pulseaudio
-        - xorg-x11-drv-evdev
-        - xorg-x11-drv-mtev
-        - dbus-x11
-        #libqtdeclarative4-gestures
 
-        # New stuff to get closer to the x86 mer image
-        #- contextkit-meego-battery-upower
-        #- contextkit-meego
-        - cpio
-        - device-mapper-libs
-        - device-mapper
-        - gdb
-        #- generic-logos
-        - libusb1
-        - mlite
-        #- mtools
-        - openssh-clients
-        - openssh-server
-        - openssh
-        #- parted
-        - pm-utils
-        #- rsync
-        - tar
-        - upower
-        - less
-        - strace
-        #- plasma-contour-config-blacklist
-
-        #- kde-runtime-debuginfo
-        #- kde-workspace-debuginfo
-        #- kdelibs-debuginfo
-        #- plasma-mobile-debuginfo
-        #- glibc-debuginfo
-        #- polkit-debuginfo
-        #- polkit-qt-1-debuginfo
 
         PostScripts:
         - scripts/free-space.post

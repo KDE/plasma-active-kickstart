@@ -1,1 +1,0 @@
-part / --size 3000 --ondisk sda --fstype=ext4

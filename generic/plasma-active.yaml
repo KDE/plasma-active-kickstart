@@ -115,14 +115,14 @@ Plasma Active:
         - rlog
 
         # Games
-        - lskat
-        - katomic
-        - kfourinline
-        - knetwalk
-        - kshisen
-        - kmahjongg
+        #- lskat
+        #- katomic
+        #- kfourinline
+        #- knetwalk
+        #- kshisen
+        #- kmahjongg
         - kpat
-        - kreversi
+        #- kreversi
 
         # Apps
         - kwrite

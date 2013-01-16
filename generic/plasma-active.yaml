@@ -134,8 +134,7 @@ Plasma Active:
 
         PostScripts:
         - scripts/free-space.post
-        - scripts/setcursor.post
-        - scripts/key-import-workaround.post
+        #- scripts/key-import-workaround.post
         - scripts/prelink.post
         - scripts/setup-xsession.post
         - scripts/tty2-session.post

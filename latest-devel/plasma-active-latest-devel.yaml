@@ -35,6 +35,12 @@ Repositories:
     -   Name: ce-adaptation-pandaboard
         Url:  http://repo.pub.meego.com/CE:/Adaptation:/PandaBoard/Mer_Core_@ARCH@/
 
+    -   Name: nemo-hw-nv-tegra3-common
+        Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/common/latest_@ARCH@/
+
+    -   Name: nemo-hw-nv-tegra3-nexus7
+        Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/nexus7/latest_@ARCH@/
+
 #     -   Name: ce-ux-mtf
 #         Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_@ARCH@/
 # 

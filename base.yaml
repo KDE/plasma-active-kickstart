@@ -69,3 +69,11 @@ Configurations:
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
 
+  - Name: Plasma Active Google Nexus7
+    FileName: plasma-active-armv7hl-google-nexus7
+    Inherit:
+        - Nemo Adaptation Google Nexus7
+# Plasma Active has to be the last entry to get disabling of package installation
+# from adaption definitions working. Otherwise 'contour-intro' and 'sample-media'
+# will conflict with 'contour-intro-tegra3' and 'sample-media-tegra3'.
+        - Plasma Active 

@@ -1,0 +1,22 @@
+Nemo Adaptation Tegra3:
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - nemo-hw-nv-tegra3-common
+    ExtraPackages:
+        - codecs-tegra3
+        - configs-tegra3
+        - contour-intro-tegra3
+        - -contour-intro
+        - graphics-adaptation-tegra3
+        - graphics-adaptation-tegra3-libEGL
+        - graphics-adaptation-tegra3-libGLESv1
+        - graphics-adaptation-tegra3-libGLESv2
+        - graphics-adaptation-tegra3-libOMX
+        - graphics-adaptation-tegra3-xorg
+        - #graphics-adaptation-tegra-tools
+        - linux-firmware-tegra3
+        - mtdev
+        - sample-media-tegra3
+        - -sample-media
+        - xorg-x11-drv-mtev

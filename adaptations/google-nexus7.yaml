@@ -1,0 +1,12 @@
+Nemo Adaptation Google Nexus7:
+    Part: google-nexus7.partition
+    Kernel: kernel-adaptation-google-nexus7
+    Mic2Options: -f fs --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - Nemo Adaptation Tegra3
+    Repos:
+        - nemo-hw-nv-tegra3-nexus7
+    ExtraPackages:
+        - configs-nexus7
+        - kernel-adaptation-google-nexus7
+        - moslo-nexus7

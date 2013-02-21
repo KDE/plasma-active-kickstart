@@ -6,8 +6,6 @@ Nemo Adaptation Tegra3:
     ExtraPackages:
         - codecs-tegra3
         - configs-tegra3
-        - contour-intro-tegra3
-        - -contour-intro
         - graphics-adaptation-tegra3
         - graphics-adaptation-tegra3-libEGL
         - graphics-adaptation-tegra3-libGLESv1
@@ -17,6 +15,4 @@ Nemo Adaptation Tegra3:
         - #graphics-adaptation-tegra-tools
         - linux-firmware-tegra3
         - mtdev
-        - sample-media-tegra3
-        - -sample-media
         - xorg-x11-drv-mtev

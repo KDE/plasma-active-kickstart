@@ -1,5 +1,6 @@
 RepositoryURLVariables:
     "@BUILD_ID@": latest
+    "@MER_RELEASE@": latest
 
 Repositories:
     -   Name: mer-core

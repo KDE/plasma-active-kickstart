@@ -8,7 +8,7 @@ Repositories:
         Options: --debuginfo
 
     -   Name: mer-core-debug
-        Url: http://releases.merproject.org/releases/latest/builds/@ARCH@/debug
+        Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
     -   Name: ce-mw-shared
         Url:  http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@/

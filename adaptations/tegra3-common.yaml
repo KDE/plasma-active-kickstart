@@ -1,4 +1,4 @@
-Nemo Adaptation Tegra3:
+Nemo Adaptation Tegra3 Common:
     Inherit:
         - ARMv7 hardfp architecture
     Repos:

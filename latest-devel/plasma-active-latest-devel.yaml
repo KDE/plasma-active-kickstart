@@ -42,6 +42,9 @@ Repositories:
     -   Name: nemo-hw-nv-tegra3-nexus7
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/nexus7/latest_@ARCH@/
 
+    -   Name: plasma-adaptation-nexus7
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Tegra3:/Nexus7/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
+
 #     -   Name: ce-ux-mtf
 #         Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_@ARCH@/
 # 

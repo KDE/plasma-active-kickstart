@@ -6,6 +6,7 @@ Mer Extras Adaptation Archos Gen9 PVR:
     Repos:
         - adaptation-archos-gen9-pvr
     ExtraPackages:
+        - plasma-mobile-config-archos-gen9-pvr
         - plasma-mobile-config-archos-gen9-pvr-blacklist                                                                              
         - pvr-archos-gen9-kernel                                                                                                      
         - pvr-omap4-libEGL                                                                                                            

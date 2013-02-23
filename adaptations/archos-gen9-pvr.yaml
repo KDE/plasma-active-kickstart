@@ -1,0 +1,13 @@
+Mer Extras Adaptation Archos Gen9 PVR:
+    Kernel: kernel-adaptation-archos-gen9-pvr
+    Inherit:
+        - ARMv7 softfp architecture
+        - Mer Extras Adaptation Archos Gen9 Common
+    Repos:
+        - adaptation-archos-gen9-pvr
+    ExtraPackages:
+        - plasma-mobile-config-archos-gen9-pvr-blacklist                                                                              
+        - pvr-archos-gen9-kernel                                                                                                      
+        - pvr-omap4-libEGL                                                                                                            
+        - pvr-omap4-libGLESv1                                                                                                         
+        - pvr-omap4-libGLESv2

@@ -1,0 +1,10 @@
+Mer Extras Adaptation Archos Gen9 Framebuffer:
+    Kernel: kernel-adaptation-archos-gen9
+    Inherit:
+        - ARMv7 softfp architecture
+        - Mer Extras Adaptation Archos Gen9 Common
+    ExtraPackages:
+        - mesa-llvmpipe-dri-swrast-driver
+        - plasma-mobile-config-archos-gen9
+        - plasma-mobile-config-archos-gen9-blacklist
+        - xorg-x11-drv-omapfb

@@ -1,0 +1,16 @@
+Mer Extras Adaptation Archos Gen9 Common:
+    Part: archos-gen9.partition
+    Mic2Options: -f fs --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - adaptation-archos-gen9
+    ExtraPackages:
+        - alsa-mixer-asound-state-archos-gen9
+        - archos-udev-rules
+        - libwl1271-bin
+        - linux-firmware
+        - pixcir-touch-callibration
+        - pm-utils-config-wlan-archos
+        - xorg-conf-archos-gen9
+        - xorg-x11-drv-evdev
+        - xorg-x11-drv-mtev
+        - xorg-x11-server-Xorg-setuid

@@ -77,3 +77,14 @@ Configurations:
     Repos:
         - plasma-adaptation-nexus7
 
+  - Name: Plasma Active Adaptation Archos Gen9 Framebuffer
+    FileName: plasma-active-armv7l-archos-gen9-fb
+    Inherit:
+        - Plasma Active
+        - Mer Extras Adaptation Archos Gen9 Framebuffer
+
+  - Name: Plasma Active Adaptation Archos Gen9 PVR
+    FileName: plasma-active-armv7l-archos-gen9-pvr
+    Inherit:
+        - Plasma Active
+        - Mer Extras Adaptation Archos Gen9 PVR

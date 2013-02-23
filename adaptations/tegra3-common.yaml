@@ -15,4 +15,5 @@ Nemo Adaptation Tegra3 Common:
         - #graphics-adaptation-tegra-tools
         - linux-firmware-tegra3
         - mtdev
+        - xorg-x11-drv-evdev
         - xorg-x11-drv-mtev

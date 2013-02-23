@@ -106,7 +106,7 @@ Plasma Active:
         - NetworkManager-kde
         - NetworkManager-kde-libs
         - plasmoid-networkmanagement
-        - plasma-mobile-config-blacklist
+        - plasma-active-config-blacklist
         - bodega-client
 
         # add kde-security packages

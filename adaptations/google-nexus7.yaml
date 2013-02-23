@@ -6,8 +6,6 @@ Nemo Adaptation Google Nexus7:
         - Nemo Adaptation Tegra3 Common
     Repos:
         - nemo-hw-nv-tegra3-nexus7
-        - plasma-adaptation-nexus7
     ExtraPackages:
         - configs-nexus7
-        - kernel-adaptation-google-nexus7
         - moslo-nexus7

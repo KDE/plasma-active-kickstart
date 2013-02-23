@@ -73,4 +73,7 @@ Configurations:
     FileName: plasma-active-armv7hl-google-nexus7
     Inherit:
         - Plasma Active
-        - Nemo Adaptation Google Nexus7 
+        - Nemo Adaptation Google Nexus7
+    Repos:
+        - plasma-adaptation-nexus7
+

@@ -35,12 +35,27 @@ Configurations:
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
     Kernel: kernel-adaptation-pc
     Part: x86.partition
-    Groups:
-        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - acpid
+        - linux-firmware
+        - installer-shell
+        - kernel-adaptation-pc
+        - xorg-x11-drv-mtev
+        - xorg-x11-drv-synaptics
+        - xorg-x11-drv-intel
+        - mesa-x86-generic
+        - mesa-x86-generic-dri-i915-driver
+        - mesa-x86-generic-dri-i965-driver
+        - mesa-x86-generic-libEGL
+        - mesa-x86-generic-libGLESv2
+        - mesa-x86-generic-libglapi
+        - nemo-mobile-configs-x86-generic
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active i486 Virtual Machine
     FileName: plasma-active-i486-vm
@@ -48,12 +63,27 @@ Configurations:
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
     Kernel: kernel-adaptation-pc
     Part: x86.partition
-    Groups:
-        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation VM
         - Generic X86 architecture
+    ExtraPackages:
+        - acpid
+        - linux-firmware
+        - installer-shell
+        - kernel-adaptation-pc
+        - xorg-x11-drv-mtev
+        - xorg-x11-drv-synaptics
+        - xorg-x11-drv-intel
+        - mesa-x86-generic
+        - mesa-x86-generic-dri-i915-driver
+        - mesa-x86-generic-dri-i965-driver
+        - mesa-x86-generic-libEGL
+        - mesa-x86-generic-libGLESv2
+        - mesa-x86-generic-libglapi
+        - nemo-mobile-configs-x86-generic
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active i586
     FileName: plasma-active-i586
@@ -62,12 +92,27 @@ Configurations:
     BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
     Kernel: kernel-adaptation-pc
     Part: x86.partition
-    Groups:
-        - Intel x86 Generic Support
     Inherit:
         - Plasma Active
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - acpid
+        - linux-firmware
+        - installer-shell
+        - kernel-adaptation-pc
+        - xorg-x11-drv-mtev
+        - xorg-x11-drv-synaptics
+        - xorg-x11-drv-intel
+        - mesa-x86-generic
+        - mesa-x86-generic-dri-i915-driver
+        - mesa-x86-generic-dri-i965-driver
+        - mesa-x86-generic-libEGL
+        - mesa-x86-generic-libGLESv2
+        - mesa-x86-generic-libglapi
+        - nemo-mobile-configs-x86-generic
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active Google Nexus7
     FileName: plasma-active-armv7hl-google-nexus7

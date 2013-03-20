@@ -2,5 +2,4 @@ Nemo Adaptation x86 generic:
     Mic2Options: -f liveusb --record-pkgs=name --pkgmgr=yum
     Inherit:
         - Nemo x86 Common
-    Groups:
-        - Nemo x86 Generic
+

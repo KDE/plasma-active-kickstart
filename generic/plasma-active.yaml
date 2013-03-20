@@ -27,14 +27,23 @@ Plasma Active:
         - Mer Core Utils
         - Mer Core
         - Mer Connectivity
-        - Mer Graphics Common
         - Mer Minimal Xorg
 
         ExtraPackages:
         #remove connman
         - -connman
         - -connman-test
+        - -connman-configs-mer
 
+        # Sone fonts
+        - droid-sans-fonts
+        - droid-sans-mono-fonts
+        - droid-serif-fonts
+        - liberation-fonts-common
+        - liberation-mono-fonts
+        - liberation-narrow-fonts
+        - liberation-sans-fonts
+        - liberation-serif-fonts
 
         # Additional packages from mercore repository
         - cpio

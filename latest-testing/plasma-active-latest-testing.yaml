@@ -1,11 +1,6 @@
-# The nemo project is building against the latest mer release but we building
-# on top of a older one. This will hit us at some point for adaptations we are
-# not building on our own. We should ask the nemo maintainers to offer us
-# package repositories which are based on the same mer core release.
-
 RepositoryURLVariables:
-    "@BUILD_ID@": 0.20120816.1
-    "@MER_RELEASE@": 0.20120816.1
+    "@BUILD_ID@": latest
+    "@MER_RELEASE@": latest
 
 Repositories:
     -   Name: mer-core
@@ -15,47 +10,47 @@ Repositories:
     -   Name: mer-core-debug
         Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
-    -   Name: ce-mw-shared
-        Url:  http://repo.pub.meego.com/Project:/KDE:/CE:/MW:/Shared/Mer_Core_@BUILD_ID@_@ARCH@/
+    -   Name: nemo-mw
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/mw/latest_@ARCH@/
 
-    -   Name: mer-extras
-        Url: http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Project_KDE_CE_MW_Shared_Mer_Core_@BUILD_ID@_@ARCH@/
+    -   Name: kde-mw
+        Url: http://repo.merproject.org/obs/kde:/testing:/mw/latest_@ARCH@/
 
-    -   Name: plasma
-        Url: http://repo.pub.meego.com/Project:/KDE:/Trunk:/Testing/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_@BUILD_ID@_@ARCH@/
-
-
-
-    -   Name: ce-adaptation-x86-generic
-        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/x86-generic/Project_KDE_CE_MW_Shared_Mer_Core_@BUILD_ID@_@ARCH@/
+    -   Name: kde-ux
+        Url: http://repo.merproject.org/obs/kde:/testing:/ux/latest_@ARCH@/
 
 
-    -   Name: ce-adaptation-n900
-        Url:  http://repo.pub.meego.com/CE:/Adaptation:/N900/CE_Adaptation_N9xx-common_@ARCH@/
+#Hardware adaptations
 
-    -   Name: ce-adaptation-n9xx-common
-        Url:  http://repo.pub.meego.com/CE:/Adaptation:/N9xx-common/Mer_Core_@ARCH@/
+    -   Name: nemo-hw-x86-generic
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/x86:/x86-common/latest_@ARCH@/
 
-    -   Name: ce-adaptation-n950-n9
-        Url:  http://repo.pub.meego.com/CE:/Adaptation:/N950-N9/CE_Adaptation_N9xx-common_@ARCH@/
+    -   Name: nemo-hw-n900
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/ti:/omap3:/n900/latest_@ARCH@/
 
-    -   Name: ce-adaptation-pandaboard
-        Url:  http://repo.pub.meego.com/CE:/Adaptation:/PandaBoard/Mer_Core_@ARCH@/
+    -   Name: nemo-hw-n9xx-common
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/ti:/omap3:/n9xx-common/latest_@ARCH@/
+
+    -   Name: nemo-hw-n950-n9
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/ti:/omap3:/n950-n9/latest_@ARCH@/
+
+    -   Name: nemo-hw-pandaboard
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/ti:/omap4:/pandaboard/latest_@ARCH@/
 
     -   Name: nemo-hw-nv-tegra3-common
-        Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/common/latest_@ARCH@/
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/nv:/tegra3:/common/latest_@ARCH@/
 
     -   Name: nemo-hw-nv-tegra3-nexus7
-        Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/nexus7/latest_@ARCH@/
+        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/nv:/tegra3:/nexus7/latest_@ARCH@/
 
     -   Name: plasma-adaptation-nexus7
-        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Tegra3:/Nexus7/Project_KDE_Trunk_Testing_@BUILD_ID@_@ARCH@/
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Tegra3:/Nexus7/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
 
     -   Name: adaptation-archos-gen9
-        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Trunk_Testing_@BUILD_ID@_@ARCH@/ 
- 
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/  
+
     -   Name: adaptation-archos-gen9-pvr
-        Url:  http://repo.pub.meego.com//Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Trunk_Testing_@BUILD_ID@_@ARCH@/
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
 #     -   Name: ce-ux-mtf
 #         Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_@ARCH@/
 # 

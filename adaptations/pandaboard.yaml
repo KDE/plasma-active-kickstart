@@ -5,7 +5,7 @@ Nemo Adaptation PandaBoard:
     Inherit:
         - ARMv7 hardfp architecture
     Repos:
-        - ce-adaptation-pandaboard
+        - nemo-hw-pandaboard
     ExtraPackages:
         - xorg-x11-server-Xorg-setuid
         - pulseaudio-module-x11 

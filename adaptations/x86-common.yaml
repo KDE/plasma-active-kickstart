@@ -6,5 +6,5 @@ Nemo x86 Common:
     BootloaderTimeout: 0
     StartX: True
     Repos:
-        - ce-adaptation-x86-generic
+        - nemo-hw-x86-generic
 

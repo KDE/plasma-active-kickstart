@@ -5,7 +5,7 @@ Nemo Adaptation N950 N9:
     Inherit:
         - ARMv7 hardfp architecture
     Repos:
-        - ce-adaptation-n9xx-common
-        - ce-adaptation-n950-n9
+        - nemo-hw-n9xx-common
+        - nemo-hw-n950-n9
     Groups:
         - Nemo N950

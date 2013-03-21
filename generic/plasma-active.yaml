@@ -11,9 +11,9 @@ Plasma Active:
         Repos:
         - mer-core
         - mer-core-debug
-        - mer-extras
-        - ce-mw-shared
-        - plasma
+        - kde-mw
+        - nemo-mw
+        - kde-ux
 
         # user setup
         RootPass: mer

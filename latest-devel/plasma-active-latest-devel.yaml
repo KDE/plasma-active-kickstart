@@ -10,30 +10,31 @@ Repositories:
     -   Name: mer-core-debug
         Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
-    -   Name: ce-mw-shared
+    -   Name: nemo-mw
         Url:  http://repo.merproject.org/obs/nemo:/devel:/mw/latest_@ARCH@/
 
-    -   Name: mer-extras
+    -   Name: kde-mw
         Url: http://repo.merproject.org/obs/kde:/devel:/mw/latest_@ARCH@/
 
-    -   Name: plasma
+    -   Name: kde-ux
         Url: http://repo.merproject.org/obs/kde:/devel:/ux/latest_@ARCH@/
 
 
+#Hardware adaptations
 
-    -   Name: ce-adaptation-x86-generic
+    -   Name: nemo-hw-x86-generic
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/x86:/x86-common/latest_@ARCH@/
 
-    -   Name: ce-adaptation-n900
+    -   Name: nemo-hw-n900
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/ti:/omap3:/n900/latest_@ARCH@/
 
-    -   Name: ce-adaptation-n9xx-common
+    -   Name: nemo-hw-n9xx-common
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/ti:/omap3:/n9xx-common/latest_@ARCH@/
 
-    -   Name: ce-adaptation-n950-n9
+    -   Name: nemo-hw-n950-n9
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/ti:/omap3:/n950-n9/latest_@ARCH@/
 
-    -   Name: ce-adaptation-pandaboard
+    -   Name: nemo-hw-pandaboard
         Url:  http://repo.merproject.org/obs/nemo:/devel:/hw:/ti:/omap4:/pandaboard/latest_@ARCH@/
 
     -   Name: nemo-hw-nv-tegra3-common

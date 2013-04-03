@@ -12,17 +12,17 @@ rootpw mer
 desktop --autologinuser=mer
 user --name mer  --groups audio,video --password mer
 
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/armv7l/packages/ --save
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save
 
-repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/0.20120816.1/builds/armv7l/debug/ --save
+repo --name=mer-core-debuginfo --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/debug/ --save
 
-repo --name=mer-shared --baseurl=http://repo.pub.meego.com/Project:/KDE:/CE:/MW:/Shared/Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+repo --name=mer-shared --baseurl=http://repo.merproject.org/obs/nemo:/testing:/mw/latest_armv7l/ --save --debuginfo
 
-repo --name=mer-extras --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras/Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+repo --name=mer-extras --baseurl=http://repo.merproject.org/obs/kde:/testing:/mw/latest_armv7l/ --save --debuginfo
 
-repo --name=plasma --baseurl=http://repo.pub.meego.com/Project:/KDE:/Trunk:/Testing/Project_KDE_Mer_Extras_Project_KDE_CE_MW_Shared_Mer_Core_0.20120816.1_armv7l/ --save --debuginfo
+repo --name=plasma --baseurl=http://repo.merproject.org/obs/kde:/testing:/ux/latest_armv7l/ --save --debuginfo
 
-repo --name=adaptation-archos-gen9 --baseurl=http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Trunk_Testing_0.20120816.1_armv7l/ --save --debuginfo
+repo --name=adaptation-archos-gen9 --baseurl=http://repo.merproject.org/obs/home:/notmart:/Mer_Extras:/Adaptation:/Archos-gen9/latest_armv7l/ --save --debuginfo
 
 %packages
 # ce_tools repository

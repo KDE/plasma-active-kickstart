@@ -1,0 +1,5 @@
+RepositoryURLVariables:
+    "@BUILD_ID@": latest
+    "@MER_RELEASE@": latest
+    "@FLAVOUR@": testing
+    "@SSU_RELEASE_TYPE@": rnd

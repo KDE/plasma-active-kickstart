@@ -1,0 +1,49 @@
+Repositories:
+    -   Name: mer-core
+        Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+        Options: --debuginfo
+
+    -   Name: mer-core-debug
+        Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
+
+    -   Name: nemo-mw
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/mw/@MER_RELEASE@_@ARCH@/
+
+    -   Name: kde-mw
+        Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/mw/@MER_RELEASE@_@ARCH@/
+
+    -   Name: kde-ux
+        Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/ux/@MER_RELEASE@_@ARCH@/
+
+
+#Hardware adaptations
+
+    -   Name: nemo-hw-x86-generic
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-n900
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/ti:/omap3:/n900/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-n9xx-common
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/ti:/omap3:/n9xx-common/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-n950-n9
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/ti:/omap3:/n950-n9/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-pandaboard
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/ti:/omap4:/pandaboard/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-nv-tegra3-common
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/nv:/tegra3:/common/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-nv-tegra3-nexus7
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/nv:/tegra3:/nexus7/@MER_RELEASE@_@ARCH@/
+
+    -   Name: plasma-adaptation-nexus7
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Tegra3:/Nexus7/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
+
+    -   Name: adaptation-archos-gen9
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/  
+
+    -   Name: adaptation-archos-gen9-pvr
+        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/

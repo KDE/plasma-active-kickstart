@@ -117,6 +117,7 @@ Plasma Active:
         - plasmoid-networkmanagement
         - plasma-active-config-blacklist
         - bodega-client
+        - ssu-vendor-data-kde
 
         # add kde-security packages
         - encfs
@@ -139,8 +140,6 @@ Plasma Active:
 
         - -okular
 
-
-
         PostScripts:
         - scripts/free-space.post
         #- scripts/key-import-workaround.post
@@ -148,6 +147,7 @@ Plasma Active:
         - scripts/setup-xsession.post
         - scripts/tty2-session.post
         - scripts/enablefuse.post
+        - scripts/ssu.post
 
         NoChrootScripts:
         - scripts/img-name.post

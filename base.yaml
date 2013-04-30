@@ -27,7 +27,15 @@ Configurations:
     PostScripts:
         - scripts/pandaboard-sw-cursor-enable.post
         - scripts/qt-graphicssystem-opengl.post
-        
+  
+  - Name: Plasma Active Sunxi
+    FileName: plasma-active-armv7hl-sunxi
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation Sunxi
+    PostScripts:
+        - scripts/pandaboard-sw-cursor-enable.post
+      
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm
     RepositoryArchitecture: i586

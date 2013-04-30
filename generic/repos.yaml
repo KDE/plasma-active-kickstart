@@ -47,3 +47,6 @@ Repositories:
 
     -   Name: adaptation-archos-gen9-pvr
         Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
+
+    -   Name: mdfe-hw-sunxi
+        Url:  http://repo.merproject.org/obs/home:/mdfe:/hw:/sunxi/latest_armv7hl/

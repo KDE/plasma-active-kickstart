@@ -1,0 +1,14 @@
+Nemo Adaptation Sunxi:
+    Part: sunxi.partition
+    Kernel: kernel-adaptation-sunxi
+    Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - mdfe-hw-sunxi
+    ExtraPackages:
+        - libdri2
+        - sunxi-mali
+        - u-boot-sunxi
+        - xf86-video-mali
+        - xf86-video-sunxifb

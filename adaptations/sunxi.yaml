@@ -7,8 +7,12 @@ Nemo Adaptation Sunxi:
     Repos:
         - mdfe-hw-sunxi
     ExtraPackages:
-        - libdri2
+        - u-boot-sunxi-mele_a1000
+        - sunxi-boards-eoma68
         - sunxi-mali
-        - u-boot-sunxi
-        - xf86-video-mali
+        - mtdev
         - xf86-video-sunxifb
+        - xf86-video-sunxifb-example-xorg-conf
+        - xf86-video-mali
+        - xf86-video-mali-example-xorg-conf
+        - libXfixes

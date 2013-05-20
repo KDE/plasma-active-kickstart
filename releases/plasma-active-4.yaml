@@ -1,0 +1,12 @@
+RepositoryURLVariables:
+    "@BUILD_ID@": 0.20130426.0.1
+    "@MER_RELEASE@": latest
+    "@FLAVOUR@": stable
+    "@SSU_RELEASE_TYPE@": rnd
+
+Repositories:
+    -   Name: mer-core
+        Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+        Options: --debuginfo
+    -   Name: nemo-mw
+        Url:  http://releases.nemomobile.org/snapshots/repos/platform/@BUILD_ID@/@ARCH@/mw/@ARCH@/

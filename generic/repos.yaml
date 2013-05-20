@@ -6,6 +6,9 @@ Repositories:
     -   Name: mer-core-debug
         Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
+    -   Name: mer-updates
+        Url:  http://repo.merproject.org/obs/kde:/@FLAVOUR@:/mer-updates/@MER_RELEASE@_@ARCH@/
+
     -   Name: nemo-mw
         Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/mw/@MER_RELEASE@_@ARCH@/
 
@@ -15,6 +18,8 @@ Repositories:
     -   Name: kde-ux
         Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/ux/@MER_RELEASE@_@ARCH@/
 
+    -   Name: kde-apps
+        Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/apps/@MER_RELEASE@_@ARCH@/
 
 #Hardware adaptations
 

@@ -37,17 +37,19 @@ Configurations:
         - scripts/pandaboard-sw-cursor-enable.post
         - scripts/qt-graphicssystem-opengl.post
   
-  - Name: Plasma Active Sunxi
-    FileName: plasma-active-armv7hl-sunxi
+  - Name: Plasma Active Sunxi Generic
+    FileName: plasma-active-armv7hl-sunxi-generic
     Inherit:
         - Plasma Active
-        - Nemo Adaptation Sunxi
+        - Nemo Adaptation Sunxi Generic
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower
     PostScripts:
-        - scripts/pandaboard-sw-cursor-enable.post
-      
+        - scripts/sunxi-generic-copy-boot-scr.post
+        - scripts/sunxi-generic-feed-some-modules.post
+        - scripts/sunxi-remove-swap-from-fstab-workaround.post 
+
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm
     RepositoryArchitecture: i586

@@ -1,0 +1,2 @@
+# Copy the u-boot script file back into the expected name 
+cp /boot/@SUNXI_UBOOT@-boot.scr /boot/boot.scr

@@ -12,18 +12,27 @@ Configurations:
     Inherit:
         - Plasma Active
         - Nemo Adaptation N900
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active N950
     FileName: plasma-active-armv7hl-n950
     Inherit:
         - Plasma Active
         - Nemo Adaptation N950 N9
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active Pandaboard
     FileName: plasma-active-armv7hl-pandaboard
     Inherit:
         - Plasma Active
         - Nemo Adaptation PandaBoard
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
     PostScripts:
         - scripts/pandaboard-sw-cursor-enable.post
         - scripts/qt-graphicssystem-opengl.post
@@ -33,6 +42,9 @@ Configurations:
     Inherit:
         - Plasma Active
         - Nemo Adaptation Sunxi
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
     PostScripts:
         - scripts/pandaboard-sw-cursor-enable.post
       
@@ -129,15 +141,26 @@ Configurations:
         - Nemo Adaptation Google Nexus7
     Repos:
         - plasma-adaptation-nexus7
+    ExtraPackages:
+        - nexus7-fw-installer
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active Adaptation Archos Gen9 Framebuffer
     FileName: plasma-active-armv7l-archos-gen9-fb
     Inherit:
         - Plasma Active
         - Mer Extras Adaptation Archos Gen9 Framebuffer
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
 
   - Name: Plasma Active Adaptation Archos Gen9 PVR
     FileName: plasma-active-armv7l-archos-gen9-pvr
     Inherit:
         - Plasma Active
         - Mer Extras Adaptation Archos Gen9 PVR
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
+

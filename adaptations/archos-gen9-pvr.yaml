@@ -1,7 +1,7 @@
 Mer Extras Adaptation Archos Gen9 PVR:
     Kernel: kernel-adaptation-archos-gen9-pvr
     Inherit:
-        - ARMv7 softfp architecture
+        - ARMv7 hardfp architecture
         - Mer Extras Adaptation Archos Gen9 Common
     Repos:
         - adaptation-archos-gen9-pvr

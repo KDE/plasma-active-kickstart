@@ -147,7 +147,7 @@ Configurations:
         - contextkit-plugin-upower
 
   - Name: Plasma Active Adaptation Archos Gen9 Framebuffer
-    FileName: plasma-active-armv7l-archos-gen9-fb
+    FileName: plasma-active-armv7hl-archos-gen9-fb
     Inherit:
         - Plasma Active
         - Mer Extras Adaptation Archos Gen9 Framebuffer
@@ -156,7 +156,7 @@ Configurations:
         - contextkit-plugin-upower
 
   - Name: Plasma Active Adaptation Archos Gen9 PVR
-    FileName: plasma-active-armv7l-archos-gen9-pvr
+    FileName: plasma-active-armv7hl-archos-gen9-pvr
     Inherit:
         - Plasma Active
         - Mer Extras Adaptation Archos Gen9 PVR

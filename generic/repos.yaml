@@ -48,10 +48,10 @@ Repositories:
         Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Tegra3:/Nexus7/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
 
     -   Name: adaptation-archos-gen9
-        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/  
+        Url:  http://repo.merproject.org/obs/home:/wonko:/archos-g9-pa-adaptation/latest_@ARCH@/
 
     -   Name: adaptation-archos-gen9-pvr
-        Url:  http://repo.pub.meego.com/Project:/KDE:/Mer_Extras:/Adaptation:/Archos-gen9:/pvr/Project_KDE_Devel_CE_UX_PlasmaActive_@ARCH@/
+        Url:  http://repo.merproject.org/obs/home:/wonko:/archos-g9-pa-adaptation:/pvr/latest_@ARCH@/
 
     -   Name: mdfe-hw-sunxi
         Url:  http://repo.merproject.org/obs/home:/notmart:/branches:/home:/mdfe:/hw:/sunxi/latest_armv7hl/

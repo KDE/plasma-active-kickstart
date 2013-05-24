@@ -54,4 +54,4 @@ Repositories:
         Url:  http://repo.merproject.org/obs/home:/wonko:/archos-g9-pa-adaptation:/pvr/latest_@ARCH@/
 
     -   Name: mdfe-hw-sunxi
-        Url:  http://repo.merproject.org/obs/home:/notmart:/branches:/home:/mdfe:/hw:/sunxi/latest_armv7hl/
+        Url:  http://repo.merproject.org/obs/home:/mdfe:/hw:/sunxi/@MER_RELEASE@_@ARCH@/

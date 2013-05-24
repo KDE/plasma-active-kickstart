@@ -1,4 +1,4 @@
-Nemo Adaptation Sunxi:
+Nemo Adaptation Sunxi Generic:
     Part: sunxi.partition
     Kernel: kernel-adaptation-sunxi
     Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
@@ -7,8 +7,8 @@ Nemo Adaptation Sunxi:
     Repos:
         - mdfe-hw-sunxi
     ExtraPackages:
-        - u-boot-sunxi-mele_a1000
-        - sunxi-boards-eoma68
+        - u-boot-sunxi-@SUNXI_UBOOT@
+        - sunxi-boards-@SUNXI_BOARD@
         - sunxi-mali
         - mtdev
         - xf86-video-sunxifb

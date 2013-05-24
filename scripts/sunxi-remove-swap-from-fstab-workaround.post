@@ -1,0 +1,5 @@
+# Remove swap entry from fstab again, this partition will be deleted after
+# image creation by a separated call. This is needed to create the needed
+# offset for the first partition, because u-boot stuff will be stored before
+# the first partition.
+sed -i '/swap/d' /etc/fstab

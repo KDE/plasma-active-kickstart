@@ -1,0 +1,12 @@
+# Try to load some common sunxi modules
+echo '8192cu' >> /etc/modules-load.d/system.conf
+echo 'ft5x_ts' >> /etc/modules-load.d/system.conf
+echo 'sun4i_keyboard' >> /etc/modules-load.d/system.conf
+echo 'mali' >> /etc/modules-load.d/system.conf
+echo 'mali_drm' >> /etc/modules-load.d/system.conf
+echo 'ump' >> /etc/modules-load.d/system.conf
+echo 'disp_ump' >> /etc/modules-load.d/system.conf
+echo 'sunxi_dbgreg' >> /etc/modules-load.d/system.conf
+echo 'i2c_algo_bit' >> /etc/modules-load.d/system.conf
+echo 'gpio_sunxi' >> /etc/modules-load.d/system.conf
+echo 'cpufreq_stats' >> /etc/modules-load.d/system.conf

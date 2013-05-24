@@ -1,3 +1,4 @@
-part swap --size=2 --ondisk mmcblk0p --fstype=swap
+# The swap is a fake partition and will be deleted afterwards
+part swap --size=1 --ondisk mmcblk0p --fstype=swap
 part /boot --size=150  --ondisk mmcblk0p --fstype=vfat --active
 part / --size=3600  --ondisk mmcblk0p --fstype=ext3

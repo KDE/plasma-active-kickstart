@@ -1,0 +1,8 @@
+The image creation has to be done inside the Mer chroot environment
+
+1) create the kickstarts:
+mer-kickstarter mer-kickstarter -e . -c releases/plasma-active-4.yaml -o plasma-active-latest-ks/
+
+2) create the image:
+cd plasma-active-latest-ks/
+sudo mic create livecd plasma-active-i586.ks -o . --pkgmgr=zypp --arch=i686 --logfile=plasma-active-build.log

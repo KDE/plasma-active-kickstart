@@ -55,3 +55,6 @@ Repositories:
 
     -   Name: mdfe-hw-sunxi
         Url:  http://repo.merproject.org/obs/home:/mdfe:/hw:/sunxi/@MER_RELEASE@_@ARCH@/
+
+    -   Name: home-notmart-branches-home-mdfe-hw-sunxi
+        Url:  http://repo.merproject.org/obs/home:/notmart:/branches:/home:/mdfe:/hw:/sunxi/@MER_RELEASE@_@ARCH@/

@@ -1,0 +1,2 @@
+part /boot --size=150  --ondisk mmcblk0p --fstype=vfat --active
+part / --size=3600  --ondisk mmcblk0p --fstype=ext3

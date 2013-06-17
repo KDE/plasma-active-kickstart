@@ -1,0 +1,18 @@
+Nemo Adaptation Sunxi:
+    Part: eoma68.partition
+    Kernel: kernel-adaptation-sunxi
+    Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - home-notmart-branches-home-mdfe-hw-sunxi
+    ExtraPackages:
+        - u-boot-sunxi-eoma68
+        - sunxi-boards-eoma68
+        - sunxi-mali
+        - mtdev
+        - xf86-video-sunxifb
+        - xf86-video-sunxifb-example-xorg-conf
+        - xf86-video-mali
+        - xf86-video-mali-example-xorg-conf
+        - libXfixes

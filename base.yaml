@@ -50,6 +50,18 @@ Configurations:
         - scripts/sunxi-generic-feed-some-modules.post
         - scripts/sunxi-remove-swap-from-fstab-workaround.post 
 
+  - Name: Plasma Active Sunxi EOMA68
+    FileName: plasma-active-armv7hl-sunxi-eoma68
+    Inherit:
+        - Plasma Active
+        - Nemo Adaptation Sunxi Generic
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
+    PostScripts:
+        - scripts/sunxi-generic-copy-boot-scr.post
+        - scripts/sunxi-generic-feed-some-modules.post
+
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm
     RepositoryArchitecture: i586

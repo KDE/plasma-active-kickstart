@@ -10,3 +10,5 @@ echo 'sunxi_dbgreg' >> /etc/modules-load.d/system.conf
 echo 'i2c_algo_bit' >> /etc/modules-load.d/system.conf
 echo 'gpio_sunxi' >> /etc/modules-load.d/system.conf
 echo 'cpufreq_stats' >> /etc/modules-load.d/system.conf
+echo 'g_serial' >> /etc/modules-load.d/system.conf
+

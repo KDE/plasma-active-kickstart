@@ -1,4 +1,4 @@
-Nemo Adaptation Sunxi:
+Nemo Adaptation Sunxi EOMA68:
     Part: eoma68.partition
     Kernel: kernel-adaptation-sunxi
     Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum

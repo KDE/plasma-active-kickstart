@@ -54,7 +54,7 @@ Configurations:
     FileName: plasma-active-armv7hl-sunxi-eoma68
     Inherit:
         - Plasma Active
-        - Nemo Adaptation Sunxi Generic
+        - Nemo Adaptation Sunxi EOMA68
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower

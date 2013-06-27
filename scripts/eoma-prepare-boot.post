@@ -1,0 +1,11 @@
+
+cp /boot/eoma68_a10-boot.scr /boot/boot.scr
+cp /boot/eoma68_a10-u-boot.bin /boot/u-boot.bin
+
+cp /boot/eoma68-script.bin /boot/script.bin
+
+
+cat > /boot/uEnv.txt << EOF
+kernel=uImage-3.4.34
+loglevel=8
+EOF

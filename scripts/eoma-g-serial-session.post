@@ -1,0 +1,5 @@
+
+# change getty options
+sed -i 's!ExecStart=-/sbin/agetty -s %I 115200,38400,9600!ExecStart=-/sbin/agetty -L %I 115200 linux!g' /lib/systemd/system/serial-getty@.service
+
+ln -s /lib/systemd/system/serial-getty@.service /lib/systemd/system/getty.target.wants/serial-getty@ttyGS0.service

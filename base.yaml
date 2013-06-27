@@ -61,6 +61,7 @@ Configurations:
     PostScripts:
         - scripts/sunxi-generic-copy-boot-scr.post
         - scripts/sunxi-generic-feed-some-modules.post
+        - scripts/eoma-g-serial-session.post
 
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm

@@ -9,3 +9,6 @@ Nemo Adaptation Google Nexus7:
     ExtraPackages:
         - configs-nexus7
         - moslo-nexus7
+    PostScripts:
+        - google-nexus7.post
+

@@ -1,0 +1,31 @@
+# Explicitly set arch to armv7hl for zypper to work correctly.
+echo "arch = armv7hl" >> /etc/zypp/zypp.conf
+
+# Quick hack to allow "experienced users" to open the network settings manually.
+# This is intended as a ugly workaround as long as the nm-applet is not working properly.
+cat > /usr/local/bin/nm-settings << EOF1
+#/bin/sh
+kcmshell4 --icon networkmanager kcm_networkmanagement kcm_networkmanagement_tray
+EOF1
+chmod 755 /usr/local/bin/nm-settings
+
+# PA on Nexus7 does not work with opengl right now.
+sed -i 's/QT_DEFAULT_RUNTIME_SYSTEM=opengl/QT_DEFAULT_RUNTIME_SYSTEM=raster/' /etc/sysconfig/nemo-mobile-hw
+
+# The 3G model may have problems on suspend, so we explicitly turn the baseband power off and on.
+cat > /lib/systemd/system-sleep/wwan-fix.sh << EOF2
+#!/bin/sh
+if [ -e /sys/devices/platform/baseband_xmm_power/xmm_onoff ] ;
+then
+    case $1/$2 in
+    pre/*)
+    echo 0 > /sys/devices/platform/baseband_xmm_power/xmm_onoff
+    ;;
+    post/*)
+    echo 1 > /sys/devices/platform/baseband_xmm_power/xmm_onoff
+    ;;
+    esac
+fi
+EOF2
+chmod 755 /lib/systemd/system-sleep/wwan-fix.sh
+

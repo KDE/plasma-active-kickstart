@@ -4,6 +4,8 @@ Nemo Adaptation Tegra3 Common:
     Repos:
         - nemo-hw-nv-tegra3-common
     ExtraPackages:
+        - bangarang
+        - bluedevil
         - codecs-tegra3
         - configs-tegra3
         - graphics-adaptation-tegra3
@@ -15,5 +17,7 @@ Nemo Adaptation Tegra3 Common:
         - #graphics-adaptation-tegra-tools
         - linux-firmware-tegra3
         - mtdev
+        - -sample-media
+        - sample-media-tegra3
         - xorg-x11-drv-evdev
         - xorg-x11-drv-mtev

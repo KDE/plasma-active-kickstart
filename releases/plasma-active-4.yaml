@@ -1,5 +1,5 @@
 RepositoryURLVariables:
-    "@BUILD_ID@": 0.20130411.1
+    "@BUILD_ID@": 0.20130605.1
     "@MER_RELEASE@": latest
     "@FLAVOUR@": stable
     "@SSU_RELEASE_TYPE@": rnd
@@ -9,10 +9,10 @@ Repositories:
         Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
         Options: --debuginfo
     -   Name: nemo-mw
-        Url:  http://releases.nemomobile.org/snapshots/repos/platform/0.20130426.0.1/@ARCH@/
+        Url:  http://releases.nemomobile.org/snapshots/repos/platform/0.20130619.0.1/@ARCH@/
 
     -   Name: nemo-hw-x86-generic
-        Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
+        Url:  http://releases.nemomobile.org/snapshots/repos/hw/x86/x86-common/0.20130619.0.1/i586/
 
     -   Name: nemo-hw-n900
         Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/ti:/omap3:/n900/@MER_RELEASE@_@ARCH@/

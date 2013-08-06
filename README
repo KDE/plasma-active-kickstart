@@ -6,3 +6,11 @@ mer-kickstarter mer-kickstarter -e . -c releases/plasma-active-4.yaml -o plasma-
 2) create the image:
 cd plasma-active-latest-ks/
 sudo mic create livecd plasma-active-i586.ks -o . --pkgmgr=zypp --arch=i686 --logfile=plasma-active-build.log
+
+
+Note about WeTab:
+
+The original weTab had a bios that required a partivular sequence at the beginning of the image.
+If you are preparing an image for such device, you can do:
+
+printf "\x9d\x2a\x44\x7b"|dd of=plasma-active-i586.iso conv=notrunc bs=1 count=4 seek=440

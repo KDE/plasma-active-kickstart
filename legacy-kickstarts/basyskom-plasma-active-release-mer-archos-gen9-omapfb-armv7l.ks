@@ -20,6 +20,8 @@ repo --name=mer-shared --baseurl=http://repo.merproject.org/obs/nemo:/testing:/m
 
 repo --name=mer-extras --baseurl=http://repo.merproject.org/obs/kde:/stable:/mw/latest_armv7l/ --save --debuginfo
 
+repo --name=mer-updates --baseurl=http://repo.merproject.org/obs/kde:/stable:/mer-updates/latest_armv7l/ --save --debuginfo
+
 repo --name=plasma --baseurl=http://repo.merproject.org/obs/kde:/stable:/ux/latest_armv7l/ --save --debuginfo
 
 repo --name=adaptation-archos-gen9 --baseurl=http://repo.merproject.org/obs/home:/notmart:/Mer_Extras:/Adaptation:/Archos-gen9/latest_armv7l/ --save --debuginfo

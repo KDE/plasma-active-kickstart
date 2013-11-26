@@ -7,8 +7,8 @@ Nemo Adaptation Sunxi EOMA68:
     Repos:
         - home-notmart-nemo-devel-hw-eoma68-a20
     ExtraPackages:
-        - u-boot-sunxi-eoma68_a10
-        - sunxi-boards-eoma68
+        - u-boot-sunxi-eoma68_a20
+        - sunxi-boards-eoma68-a20
         - sunxi-mali
         - mtdev
         - xf86-video-sunxifb

@@ -1,2 +1,8 @@
-part /boot --size=150  --ondisk mmcblk0p --fstype=vfat --active
+%pre
+parted -s /dev/mmcblk0p mkpart primary ext3 1MB 32MB
+%end
+
+#part /boot --size=50 --start=2  --ondisk mmcblk0p --fstype=vfat --active
+
+part /boot --onpart=/dev/mmcblk0p1
 part / --size=3600  --ondisk mmcblk0p --fstype=ext3

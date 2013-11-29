@@ -21,6 +21,10 @@ Repositories:
     -   Name: kde-apps
         Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/apps/@MER_RELEASE@_@ARCH@/
 
+#UX adaptations
+    -   Name: kde-ux-improv
+        Url: http://repo.merproject.org/obs/kde:/@FLAVOUR@:/ux:/improv/@MER_RELEASE@_@ARCH@/
+
 #Hardware adaptations
 
     -   Name: nemo-hw-x86-generic

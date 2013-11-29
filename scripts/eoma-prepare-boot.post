@@ -2,10 +2,11 @@
 cp /boot/eoma68_a10-boot.scr /boot/boot.scr
 cp /boot/eoma68_a10-u-boot.bin /boot/u-boot.bin
 
-cp /boot/eoma68-script.bin /boot/eoma68_a10-script.bin
+cp /boot/eoma68-script.bin /boot/script.bin
 
 
 cat > /boot/uEnv.txt << EOF
-kernel=uImage-3.4.34
+bootargs=console=ttyS0,115200 root=/dev/mmcblk0p1 rdinit=/sbin/init panic=10 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1920x1080p50 sunxi_fb_mem_reserve=32 debug
+kernel=uImage
 loglevel=8
 EOF

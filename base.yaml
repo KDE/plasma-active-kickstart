@@ -56,6 +56,14 @@ Configurations:
         - scripts/eoma-g-serial-session.post
         - scripts/eoma-prepare-boot.post
 
+  - Name: Plasma Active Sunxi EOMA68 Improv
+    FileName: plasma-active-armv7hl-sunxi-eoma68-improv
+    Inherit:
+        - Plasma Active
+        - Plasma Active Sunxi EOMA68
+    Repos:
+        - kde-ux-improv
+
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm
     RepositoryArchitecture: i586

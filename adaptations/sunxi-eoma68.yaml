@@ -6,7 +6,6 @@ Nemo Adaptation Sunxi EOMA68:
         - ARMv7 hardfp architecture
     Repos:
         - home-notmart-nemo-devel-hw-eoma68-a20
-        - kde-ux-improv
     ExtraPackages:
         - u-boot-sunxi-eoma68_a20
         - sunxi-boards-eoma68-a20
@@ -14,6 +13,4 @@ Nemo Adaptation Sunxi EOMA68:
         - mtdev
         - xf86-video-sunxifb
         - xf86-video-sunxifb-example-xorg-conf
-        - xf86-video-mali
-        - xf86-video-mali-example-xorg-conf
         - libXfixes

@@ -42,20 +42,6 @@ Configurations:
         - scripts/pandaboard-sw-cursor-enable.post
         - scripts/qt-graphicssystem-opengl.post
   
-  - Name: Plasma Active Sunxi Generic
-    FileName: plasma-active-armv7hl-sunxi-generic
-    Inherit:
-        - Plasma Active
-        - Nemo Adaptation Sunxi Generic
-    ExtraPackages:
-        - nemo-mobile-session
-        - contextkit-plugin-upower
-    PostScripts:
-        - scripts/arch-armv7hl.post
-        - scripts/sunxi-generic-copy-boot-scr.post
-        - scripts/sunxi-generic-feed-some-modules.post
-        - scripts/sunxi-remove-swap-from-fstab-workaround.post 
-
   - Name: Plasma Active Sunxi EOMA68
     FileName: plasma-active-armv7hl-sunxi-eoma68
     Inherit:

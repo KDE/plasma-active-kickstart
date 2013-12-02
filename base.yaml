@@ -60,9 +60,17 @@ Configurations:
     FileName: plasma-active-armv7hl-sunxi-eoma68-improv
     Inherit:
         - Plasma Active
-        - Plasma Active Sunxi EOMA68
+        - Nemo Adaptation Sunxi EOMA68
     Repos:
         - kde-ux-improv
+    ExtraPackages:
+        - nemo-mobile-session
+        - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
+        - scripts/sunxi-generic-feed-some-modules.post
+        - scripts/eoma-g-serial-session.post
+        - scripts/eoma-prepare-boot.post
 
   - Name: Plasma Active i586 Virtual Machine
     FileName: plasma-active-i586-vm

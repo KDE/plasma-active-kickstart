@@ -15,6 +15,8 @@ Configurations:
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
 
   - Name: Plasma Active N950
     FileName: plasma-active-armv7hl-n950
@@ -24,6 +26,8 @@ Configurations:
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
 
   - Name: Plasma Active Pandaboard
     FileName: plasma-active-armv7hl-pandaboard
@@ -34,6 +38,7 @@ Configurations:
         - nemo-mobile-session
         - contextkit-plugin-upower
     PostScripts:
+        - scripts/arch-armv7hl.post
         - scripts/pandaboard-sw-cursor-enable.post
         - scripts/qt-graphicssystem-opengl.post
   
@@ -46,6 +51,7 @@ Configurations:
         - nemo-mobile-session
         - contextkit-plugin-upower
     PostScripts:
+        - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-copy-boot-scr.post
         - scripts/sunxi-generic-feed-some-modules.post
         - scripts/sunxi-remove-swap-from-fstab-workaround.post 
@@ -59,6 +65,7 @@ Configurations:
         - nemo-mobile-session
         - contextkit-plugin-upower
     PostScripts:
+        - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-feed-some-modules.post
         - scripts/eoma-g-serial-session.post
         - scripts/eoma-prepare-boot.post
@@ -160,6 +167,8 @@ Configurations:
         - nexus7-fw-installer
         - nemo-mobile-session
         - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
 
   - Name: Plasma Active Adaptation Archos Gen9 Framebuffer
     FileName: plasma-active-armv7hl-archos-gen9-fb
@@ -169,6 +178,8 @@ Configurations:
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
 
   - Name: Plasma Active Adaptation Archos Gen9 PVR
     FileName: plasma-active-armv7hl-archos-gen9-pvr
@@ -178,4 +189,6 @@ Configurations:
     ExtraPackages:
         - nemo-mobile-session
         - contextkit-plugin-upower
+    PostScripts:
+        - scripts/arch-armv7hl.post
 

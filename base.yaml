@@ -67,7 +67,13 @@ Configurations:
         - nemo-mobile-session
         - contextkit-plugin-upower
         - -plasma-mobile-config-default
+        - -kpat
+        - kdiamond
         - plasma-mobile-config-improv
+        - dolphin
+        - konqueror
+        - plasma-desktop
+        - kwin-desktop
     PostScripts:
         - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-feed-some-modules.post

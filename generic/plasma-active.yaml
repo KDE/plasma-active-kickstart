@@ -146,7 +146,6 @@ Plasma Active:
         - scripts/free-space.post
         #- scripts/key-import-workaround.post
         - scripts/prelink.post
-        - scripts/setup-xsession.post
         - scripts/tty2-session.post
         - scripts/enablefuse.post
 

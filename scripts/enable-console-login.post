@@ -1,0 +1,5 @@
+
+rm /lib/systemd/system/default.target
+
+ln -s /lib/systemd/system/multi-user.target /lib/systemd/system/default.target
+ln -s /lib/systemd/system/getty@.service /lib/systemd/system/getty.target.wants/getty@tty1.service

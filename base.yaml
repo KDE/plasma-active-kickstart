@@ -75,6 +75,7 @@ Configurations:
         - konqueror
         - plasma-desktop
         - kwin-desktop
+        - sddm
     PostScripts:
         - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-feed-some-modules.post

@@ -28,7 +28,6 @@ Mer Essentials:
         Groups:
         - Mer Core Utils
         - Mer Core
-        - Mer Connectivity
 
         ExtraPackages:
         #remove connman
@@ -40,25 +39,6 @@ Mer Essentials:
         - cpio
         - gzip
         - openssh-server
-        - alsa-utils
-
-
-
-        # Additional packages from mer-shared repository
-        - gdb
-        - ca-certificates
-        - pulseaudio-policy-enforcement
-
-
-        # plasma repository
-        ###################
-        # add some simple testing tools
-        - simple-tests
-        - dhclient
-        - libpcap
-        - ModemManager
-        - NetworkManager
-        - ssu-vendor-data-kde
 
 
         PostScripts:

@@ -204,3 +204,14 @@ Configurations:
     PostScripts:
         - scripts/arch-armv7hl.post
 
+
+  - Name: Mer Essentials Sunxi EOMA68 Improv
+    FileName: plasma-active-armv7hl-sunxi-eoma68-improv
+    Inherit:
+        - Mer Essentials
+        - Nemo Adaptation Sunxi EOMA68
+
+    PostScripts:
+        - scripts/arch-armv7hl.post
+        - scripts/sunxi-generic-feed-some-modules.post
+        - scripts/eoma-prepare-boot.post

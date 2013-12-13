@@ -1,0 +1,73 @@
+
+
+Mer Essentials:
+        Language: en_US.UTF-8
+        Keyboard: us
+        Timezone: UTC
+
+        Active: True
+
+        RepositoryOptions: --save --debuginfo --source
+        Repos:
+        - mer-core
+        - mer-core-debug
+        - mer-updates
+        - kde-mw
+        - nemo-mw
+        - kde-ux
+        - kde-apps
+
+        # user setup
+        RootPass: mer
+        DefaultUser: mer
+        DefaultUserPass: mer
+
+
+        
+        
+        Groups:
+        - Mer Core Utils
+        - Mer Core
+        - Mer Connectivity
+
+        ExtraPackages:
+        #remove connman
+        - -connman
+        - -connman-test
+        - -connman-configs-mer
+
+        # Additional packages from mercore repository
+        - cpio
+        - gzip
+        - openssh-server
+        - alsa-utils
+
+
+
+        # Additional packages from mer-shared repository
+        - gdb
+        - ca-certificates
+        - pulseaudio-policy-enforcement
+
+
+        # plasma repository
+        ###################
+        # add some simple testing tools
+        - simple-tests
+        - dhclient
+        - libpcap
+        - ModemManager
+        - NetworkManager
+        - ssu-vendor-data-kde
+
+
+        PostScripts:
+        - scripts/free-space.post
+        - scripts/prelink.post
+        - scripts/tty2-session.post
+        - scripts/enable-console-login.post
+        
+
+        NoChrootScripts:
+        - scripts/img-name.post
+

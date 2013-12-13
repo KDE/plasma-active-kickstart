@@ -206,7 +206,7 @@ Configurations:
 
 
   - Name: Mer Essentials Sunxi EOMA68 Improv
-    FileName: plasma-active-armv7hl-sunxi-eoma68-improv
+    FileName: mer-essentials-armv7hl-sunxi-eoma68-improv
     Inherit:
         - Mer Essentials
         - Nemo Adaptation Sunxi EOMA68

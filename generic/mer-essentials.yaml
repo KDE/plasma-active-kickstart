@@ -22,8 +22,7 @@ Mer Essentials:
         DefaultUser: mer
         DefaultUserPass: mer
 
-
-        
+       
         
         Groups:
         - Mer Core Utils
@@ -34,6 +33,7 @@ Mer Essentials:
         - -connman
         - -connman-test
         - -connman-configs-mer
+        - net-tools
 
         # Additional packages from mercore repository
         - cpio

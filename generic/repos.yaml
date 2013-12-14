@@ -6,6 +6,10 @@ Repositories:
     -   Name: mer-core-debug
         Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
+    -   Name: mer-tools
+        Url:  http://repo.merproject.org/obs/mer-tools:/@FLAVOUR@:/@MER_RELEASE@_@ARCH@/
+        Options: --debuginfo
+
     -   Name: mer-updates
         Url:  http://repo.merproject.org/obs/kde:/@FLAVOUR@:/mer-updates/@MER_RELEASE@_@ARCH@/
 

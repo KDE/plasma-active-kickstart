@@ -11,6 +11,7 @@ Mer Essentials:
         Repos:
         - mer-core
         - mer-core-debug
+        - mer-tools
         - mer-updates
         - kde-mw
         - nemo-mw
@@ -34,6 +35,7 @@ Mer Essentials:
         - -connman-test
         - -connman-configs-mer
         - net-tools
+        - iputils
 
         # Additional packages from mercore repository
         - cpio

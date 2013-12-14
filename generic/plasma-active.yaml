@@ -11,6 +11,7 @@ Plasma Active:
         Repos:
         - mer-core
         - mer-core-debug
+        - mer-tools
         - mer-updates
         - kde-mw
         - nemo-mw

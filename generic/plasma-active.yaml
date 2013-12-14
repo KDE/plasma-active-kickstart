@@ -71,6 +71,7 @@ Plasma Active:
         - gst-plugins-good
         - ca-certificates
         - pulseaudio-policy-enforcement
+        - rsync
 
         # mer-extras repository
         ##############################

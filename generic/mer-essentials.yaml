@@ -34,13 +34,14 @@ Mer Essentials:
         - -connman
         - -connman-test
         - -connman-configs-mer
-        - net-tools
-        - iputils
 
         # Additional packages from mercore repository
         - cpio
         - gzip
         - openssh-server
+        - net-tools
+        - iputils
+        - rsync
 
 
         PostScripts:

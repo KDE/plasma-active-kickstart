@@ -7,7 +7,7 @@ Repositories:
         Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
 
     -   Name: mer-tools
-        Url:  http://repo.merproject.org/obs/mer-tools:/@FLAVOUR@:/@MER_RELEASE@_@ARCH@/
+        Url:  http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
         Options: --debuginfo
 
     -   Name: mer-updates

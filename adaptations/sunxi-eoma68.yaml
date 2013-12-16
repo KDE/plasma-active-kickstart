@@ -10,6 +10,7 @@ Nemo Adaptation Sunxi EOMA68:
         - u-boot-sunxi-eoma68_a20
         - sunxi-boards-eoma68-a20
         - sunxi-mali
+        - sunxi-mali-devel
         - mtdev
         - xf86-video-fbturbo
         - xf86-video-fbturbo-example-xorg-conf

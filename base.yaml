@@ -69,6 +69,7 @@ Configurations:
         - -plasma-mobile-config-default
         - -kpat
         - -nemo-mobile-session
+        - openbox
         - kdiamond
         - plasma-mobile-config-improv
         - dolphin
@@ -77,6 +78,13 @@ Configurations:
         - kwin-desktop
         - sddm
         - qt5-examples
+        - qt5-plugin-platform-xcb
+        - qt5-plugin-imageformat-jpeg
+        - qt5-qtdeclarative-qmlscene
+        - qt5-qtdeclarative-import-qtquick2plugin
+        - qt5-qtdeclarative-import-models2
+        - qt5-qtdeclarative-import-xmllistmodel
+        
     PostScripts:
         - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-feed-some-modules.post

@@ -14,3 +14,4 @@ Nemo Adaptation Sunxi EOMA68:
         - xf86-video-fbturbo
         - xf86-video-fbturbo-example-xorg-conf
         - libXfixes
+        - a10disp

@@ -11,6 +11,6 @@ Nemo Adaptation Sunxi EOMA68:
         - sunxi-boards-eoma68-a20
         - sunxi-mali
         - mtdev
-        - xf86-video-sunxifb
-        - xf86-video-sunxifb-example-xorg-conf
+        - xf86-video-fbturbo
+        - xf86-video-fbturbo-example-xorg-conf
         - libXfixes

@@ -76,6 +76,7 @@ Configurations:
         - plasma-desktop
         - kwin-desktop
         - sddm
+        - qt5-examples
     PostScripts:
         - scripts/arch-armv7hl.post
         - scripts/sunxi-generic-feed-some-modules.post

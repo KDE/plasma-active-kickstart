@@ -17,6 +17,7 @@ Mer Essentials:
         - nemo-mw
         - kde-ux
         - kde-apps
+        - mer-qt
 
         # user setup
         RootPass: mer

@@ -84,6 +84,9 @@ Configurations:
         - qt5-qtdeclarative-import-qtquick2plugin
         - qt5-qtdeclarative-import-models2
         - qt5-qtdeclarative-import-xmllistmodel
+        - qt5-qtdeclarative-import-particles2
+        - qt5-qtdeclarative-import-localstorageplugin
+        - qt5-plugin-sqldriver-sqlite
         
     PostScripts:
         - scripts/arch-armv7hl.post

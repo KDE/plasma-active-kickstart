@@ -77,7 +77,7 @@ Configurations:
         - plasma-desktop
         - kwin-desktop
         - sddm
-        - qt5-examples
+        - qt5-qtdeclarative-demos
         - qt5-plugin-platform-xcb
         - qt5-plugin-imageformat-jpeg
         - qt5-qtdeclarative-qmlscene

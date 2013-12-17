@@ -8,7 +8,7 @@ Nemo Adaptation Sunxi EOMA68:
         - home-notmart-nemo-devel-hw-eoma68-a20
     ExtraPackages:
         - u-boot-sunxi-eoma68_a20
-        - sunxi-boards-eoma68-a20
+        - sunxi-boards-improv-eoma68-a20
         - sunxi-mali
         - sunxi-mali-devel
         - mtdev

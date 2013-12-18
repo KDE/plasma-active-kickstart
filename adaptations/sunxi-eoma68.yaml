@@ -5,7 +5,7 @@ Nemo Adaptation Sunxi EOMA68:
     Inherit:
         - ARMv7 hardfp architecture
     Repos:
-        - home-notmart-nemo-devel-hw-eoma68-a20
+        - nemo-hw-allwinner-a20-eoma68
     ExtraPackages:
         - u-boot-sunxi-eoma68_a20
         - sunxi-boards-improv-eoma68-a20

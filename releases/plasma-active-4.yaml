@@ -31,3 +31,6 @@ Repositories:
 
     -   Name: nemo-hw-nv-tegra3-nexus7
         Url:  http://repo.merproject.org/obs/nemo:/testing:/hw:/nv:/tegra3:/nexus7/@MER_RELEASE@_@ARCH@/
+
+    -   Name: nemo-hw-allwinner-a20-eoma68
+        Url:  http://repo.merproject.org/obs/nemo:/stable:/hw:/allwinner:/a20:/eoma68/0.20130619.0.1_@ARCH@/

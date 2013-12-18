@@ -67,5 +67,5 @@ Repositories:
     -   Name: mdfe-hw-sunxi
         Url:  http://repo.merproject.org/obs/home:/mdfe:/hw:/sunxi/@MER_RELEASE@_@ARCH@/
 
-    -   Name: home-notmart-nemo-devel-hw-eoma68-a20
-        Url:  http://repo.merproject.org/obs/home:/notmart:/nemo:/devel:/hw:/eoma68-a20/@MER_RELEASE@_@ARCH@/
+    -   Name: nemo-hw-allwinner-a20-eoma68
+        Url:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/allwinner:/a20:/eoma68/@MER_RELEASE@_@ARCH@/
